@@ -1,3 +1,4 @@
 * text=auto eol=lf
+# For Windows batch files.
 *.{cmd,[cC][mM][dD]} text eol=crlf
 *.{bat,[bB][aA][tT]} text eol=crlf
