@@ -10,15 +10,15 @@ if [ ! -d ${DOT_DIR} ]; then
 	if has "git"; then
 		git clone "https://github.com/hskwakr/wsl-dotfiles.git" ${DOT_DIR}
 	elif has "curl" || has "wget"; then
-		TARBALL=""
+		TARBALL="https://github.com/hskwakr/wsl-dotfiles/archive/refs/heads/main.tar.gz"
 		if has "curl"; then
-			curl -L ${TARBALL} -o master.tar.gz
+			curl -L ${TARBALL} -o main.tar.gz
 		else
 			wget ${TARBALL}
 		fi
-		tar -zxvf master.tar.gz
-		rm -f master.tar.gz
-		mv -f dotfiles-master "${DOT_DIR}"
+		tar -zxvf main.tar.gz
+		rm -f main.tar.gz
+		mv -f dotfiles-main "${DOT_DIR}"
 	else
 		echo "curl or wget or git required"
 		exit 1
