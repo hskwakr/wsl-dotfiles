@@ -30,7 +30,7 @@ if [ ! -d ${DOT_DIR} ]; then
 		[[ "$f" == ".git" ]] && continue
 		[[ "$f" == ".gitignore" ]] && continue
 		[[ "$f" == ".gitattributes" ]] && continue
-		echo "$f"
+		ln -snf $DOT_DIR/"$f" $HOME/"$f"
 	done
 else
 	echo "dotfiles already exists"
