@@ -27,6 +27,9 @@ if [ ! -d ${DOT_DIR} ]; then
 	cd ${DOT_DIR}
 	for f in .??*
 	do
+		[[ "$f" == ".git" ]] && continue
+		[[ "$f" == ".gitignore" ]] && continue
+		[[ "$f" == ".gitattributes" ]] && continue
 		echo "$f"
 	done
 else
