@@ -24,6 +24,7 @@ if [ ! -d ${DOT_DIR} ]; then
 		exit 1
 	fi
 
+	echo "Start installing dot files..."
 	cd ${DOT_DIR}
 	for f in .??*
 	do
