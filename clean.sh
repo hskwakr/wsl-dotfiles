@@ -1,17 +1,19 @@
 #!/bin/bash
 
+# Remove dotfiles and this repository
 DOT_DIR="$HOME/wsl-dotfiles"
 if [ -d ${DOT_DIR} ]; then
 	cd ${DOT_DIR}
+	echo "Remove linked dot files from dotfiles repository..."
 	for f in .??*
 	do
 		[[ "$f" == ".git" ]] && continue
 		[[ "$f" == ".gitignore" ]] && continue
 		[[ "$f" == ".gitattributes" ]] && continue
 
-		rm -rf "$HOME/$f"
-		echo "Removed $f"
+		rm -rvf "$HOME/$f"
 	done
+	rm -rf ${DOT_DIR} 
 else
 	echo "dotfiles does not exists"
 	exit 1
