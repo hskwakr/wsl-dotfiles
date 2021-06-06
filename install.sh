@@ -31,6 +31,7 @@ if [ ! -d ${DOT_DIR} ]; then
 		[[ "$f" == ".gitignore" ]] && continue
 		[[ "$f" == ".gitattributes" ]] && continue
 		ln -snf $DOT_DIR/"$f" $HOME/"$f"
+		echo "Installed $f"
 	done
 else
 	echo "dotfiles already exists"
