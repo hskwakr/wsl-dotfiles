@@ -125,14 +125,11 @@ export EDITOR=vim
 #--------------------------------------
 # Local Variables
 # Colors
-red="\e[0;91m"
-blue="\e[0;94m"
-green="\e[0;92m"
-white="\e[0;97m"
-
-bold="\e[1m"
-uline="\e[4m"
-reset="\e[0m"
+red="\[\e[0;91m\]"
+blue="\[\e[0;94m\]"
+green="\[\e[0;92m\]"
+white="\[\e[0;97m\]"
+reset="\[\e[0m\]"
 
 # Custom Prompt
 PS1="${debian_chroot:+($debian_chroot)}$green\u$reset:$blue\W$reset$ "
