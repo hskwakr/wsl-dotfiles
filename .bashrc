@@ -119,4 +119,6 @@ fi
 #--------------------------------------
 # CUSTOM .BASHRC SETTINGS
 #--------------------------------------
+# Enviroment variables
+export EDITOR=vim
 
