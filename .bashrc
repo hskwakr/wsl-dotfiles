@@ -147,8 +147,8 @@ white="97"
 
 #--------------------------------------
 # Custom Prompt
-prompt_color1="\[\e[0;${green}m\]"
+prompt_color1="\[\e[2;${green}m\]"
 prompt_color2="\[\e[0;${lightBlue}m\]"
 prompt_color3="\[\e[0;${reset}m\]"
-PS1="${debian_chroot:+($debian_chroot)}${prompt_color1}WSL${prompt_color3}:${prompt_color2}\W${prompt_color3}$ "
+PS1="${debian_chroot:+($debian_chroot)}${prompt_color1}WSL${prompt_color3}:${prompt_color2}\W${prompt_color3}\$ "
 
