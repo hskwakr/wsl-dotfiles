@@ -147,8 +147,12 @@ white="97"
 
 #--------------------------------------
 # Custom Prompt
-prompt_color1="\[\e[2;${green}m\]"
-prompt_color2="\[\e[0;${lightBlue}m\]"
-prompt_color3="\[\e[0;${reset}m\]"
-PS1="${debian_chroot:+($debian_chroot)}${prompt_color1}WSL${prompt_color3}:${prompt_color2}\W${prompt_color3}\$ "
+psColor1="\[\e[2;${green}m\]"
+psColor2="\[\e[0;${lightBlue}m\]"
+psColor3="\[\e[0;${lightRed}m\]"
+psColor4="\[\e[0;${reset}m\]"
 
+# Git Branch
+gitBranchInfo=$(__git_ps1)
+
+PROMPT_COMMAND='__git_ps1 "${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}" "${psColor4}\\\$ "'
