@@ -131,6 +131,7 @@ green="\[\e[0;92m\]"
 white="\[\e[0;97m\]"
 reset="\[\e[0m\]"
 
+#--------------------------------------
 # Custom Prompt
 PS1="${debian_chroot:+($debian_chroot)}${green}WSL${reset}:${blue}\W${reset}$ "
 
