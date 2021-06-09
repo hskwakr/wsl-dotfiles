@@ -119,10 +119,6 @@ fi
 #--------------------------------------
 # CUSTOM .BASHRC SETTINGS
 #--------------------------------------
-# Enviroment Variables
-export EDITOR=vim
-
-#--------------------------------------
 # Local Variables
 # Colors
 reset="0"
@@ -145,14 +141,28 @@ lightCyan="96"
 
 white="97"
 
-#--------------------------------------
 # Custom Prompt
 psColor1="\[\e[2;${green}m\]"
 psColor2="\[\e[0;${lightBlue}m\]"
 psColor3="\[\e[0;${lightRed}m\]"
 psColor4="\[\e[0;${reset}m\]"
 
-# Git Branch
-gitBranchInfo=$(__git_ps1)
+#--------------------------------------
+# Functions
+dispatch () {
+	export EXIT_STATUS="$?" # error code of latest command
+	local f
+	for f in ${!PROMPT_COMMAND_*}; do
+		eval "${!f}"
+	done
+	unset f
+}
 
-PROMPT_COMMAND='__git_ps1 "${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}" "${psColor4}\\\$ "'
+#--------------------------------------
+# Enviroment Variables
+export EDITOR=vim
+
+# PROMT_COMMAND
+export PROMPT_COMMAND="dispatch"
+export PROMPT_COMMAND_PS1='__git_ps1 "${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}" "${psColor4}\\\$ "'
+
