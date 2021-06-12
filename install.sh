@@ -3,7 +3,7 @@
 DOT_DIR="$HOME/wsl-dotfiles"
 
 has() {
-	type "$1" > /dev/null 2>&1
+	type "$1" >/dev/null 2>&1
 }
 
 if [ ! -d "${DOT_DIR}" ]; then
@@ -26,8 +26,7 @@ if [ ! -d "${DOT_DIR}" ]; then
 
 	echo "Start installing dot files..."
 	cd "${DOT_DIR}" || exit 1
-	for f in .??*
-	do
+	for f in .??*; do
 		[ "$f" "=" ".git" ] && continue
 		[ "$f" "=" ".gitignore" ] && continue
 		[ "$f" "=" ".gitattributes" ] && continue
