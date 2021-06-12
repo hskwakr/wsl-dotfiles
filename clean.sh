@@ -7,6 +7,7 @@ if [ -d "${DOT_DIR}" ]; then
 	echo "Remove linked dot files from dotfiles repository..."
 	for f in .??*; do
 		[ "$f" "=" ".git" ] && continue
+		[ "$f" "=" ".github" ] && continue
 		[ "$f" "=" ".gitignore" ] && continue
 		[ "$f" "=" ".gitattributes" ] && continue
 

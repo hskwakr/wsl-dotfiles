@@ -28,6 +28,7 @@ if [ ! -d "${DOT_DIR}" ]; then
 	cd "${DOT_DIR}" || exit 1
 	for f in .??*; do
 		[ "$f" "=" ".git" ] && continue
+		[ "$f" "=" ".github" ] && continue
 		[ "$f" "=" ".gitignore" ] && continue
 		[ "$f" "=" ".gitattributes" ] && continue
 		ln -snf "$DOT_DIR"/"$f" "$HOME"/"$f"
@@ -37,4 +38,3 @@ else
 	echo "dotfiles already exists"
 	exit 1
 fi
-
