@@ -6,9 +6,9 @@ has() {
 	type "$1" > /dev/null 2>&1
 }
 
-if [ ! -d ${DOT_DIR} ]; then
+if [ ! -d "${DOT_DIR}" ]; then
 	if has "git"; then
-		git clone "https://github.com/hskwakr/wsl-dotfiles.git" ${DOT_DIR}
+		git clone "https://github.com/hskwakr/wsl-dotfiles.git" "${DOT_DIR}"
 	elif has "curl" || has "wget"; then
 		TARBALL="https://github.com/hskwakr/wsl-dotfiles/archive/refs/heads/main.tar.gz"
 		if has "curl"; then
@@ -25,13 +25,13 @@ if [ ! -d ${DOT_DIR} ]; then
 	fi
 
 	echo "Start installing dot files..."
-	cd ${DOT_DIR}
+	cd "${DOT_DIR}" || exit 1
 	for f in .??*
 	do
-		[[ "$f" == ".git" ]] && continue
-		[[ "$f" == ".gitignore" ]] && continue
-		[[ "$f" == ".gitattributes" ]] && continue
-		ln -snf $DOT_DIR/"$f" $HOME/"$f"
+		[ "$f" "=" ".git" ] && continue
+		[ "$f" "=" ".gitignore" ] && continue
+		[ "$f" "=" ".gitattributes" ] && continue
+		ln -snf "$DOT_DIR"/"$f" "$HOME"/"$f"
 		echo "Installed $f"
 	done
 else
