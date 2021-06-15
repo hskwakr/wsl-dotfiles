@@ -5,7 +5,7 @@
 DOT_DIR="$HOME/wsl-dotfiles"
 
 if [ -d "${DOT_DIR}" ]; then
-	echo "Remov ${DOT_DIR}/.chache/dein ..."
+	echo "Remove ${DOT_DIR}/.chache/dein ..."
 	rm -rf "${DOT_DIR:?}/.cache/dein"
 	echo "done."
 else
