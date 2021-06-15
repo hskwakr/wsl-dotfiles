@@ -1,4 +1,5 @@
 # wsl-dotfiles
+[![CI](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml)
 
 ### Install
 ```sh
