@@ -11,7 +11,7 @@ if [ -d "${DOT_DIR}" ]; then
 		[ "$f" "=" ".gitignore" ] && continue
 		[ "$f" "=" ".gitattributes" ] && continue
 
-		rm -rvf "${HOME:?}/$f"
+		rm -rvf "${HOME:?}/${f}"
 	done
 	rm -rf "${DOT_DIR:?}"
 else
