@@ -31,6 +31,7 @@ if [ ! -d "${DOT_DIR}" ]; then
 		[ "$f" "=" ".github" ] && continue
 		[ "$f" "=" ".gitignore" ] && continue
 		[ "$f" "=" ".gitattributes" ] && continue
+		[ "$f" "=" ".cache" ] && continue
 		ln -snf "$DOT_DIR"/"$f" "$HOME"/"$f"
 		echo "Installed $f"
 	done
