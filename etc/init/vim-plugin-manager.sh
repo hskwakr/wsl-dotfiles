@@ -12,7 +12,7 @@ has() {
 if [ -d "${ETC_DIR}" ]; then
 	if has "curl"; then
 		cd "${ETC_DIR}" || exit 1
-		echo "Start trying to install dein.vim ..."
+		echo "Start installing dein.vim ..."
 
 		curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >"${ETC_DIR}"/dein-installer.sh
 		sh "${ETC_DIR}"/dein-installer.sh "${DOT_DIR}"/.cache/dein
