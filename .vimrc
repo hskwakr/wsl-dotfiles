@@ -4,6 +4,14 @@
 " Defaults sttings for beginners
 source $VIMRUNTIME/defaults.vim
 
+" Required from dein.vim:
+if &compatible
+  set nocompatible " Be iMproved
+endif
+
+filetype plugin indent on
+syntax enable
+
 " -----------------------------------------------------------------------------
 " Package manager
 " - dein.vim settings
@@ -21,10 +29,6 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . s:dein_repo_dir
 endif
 
-if &compatible
-  set nocompatible " Be iMproved
-endif
-
 " Begin settings
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
@@ -34,11 +38,13 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-" Required:
-filetype plugin indent on
-syntax enable
-
-" If you want to install not installed plugins on startup.
+" Plugin installation check
 if dein#check_install()
  call dein#install()
+endif
+
+" Plugin remove check
+let s:removed_plugins = dein#check_clean()
+if len(s:removed_plugins) > 0
+  call map(s:removed_plugins, "delete(v:val, 'rf')")
 endif
