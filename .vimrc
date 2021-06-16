@@ -22,9 +22,6 @@ let s:autoload_dir = g:dotfiles_dir . '/doc/vim/autoload'
 let s:init_dir = s:autoload_dir . '/init'
 let s:plugins_dir = s:autoload_dir . '/plugins'
 
-"execute 'set runtimepath+=' . s:init_dir
-"execute 'set runtimepath+=' . s:plugins_dir
-
 " Specific settings for init 
 execute 'source' . s:init_dir . '/plugin-dein.vim'
 execute 'source' . s:init_dir . '/basic.vim'
