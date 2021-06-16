@@ -10,7 +10,7 @@ let s:vim_doc_dir = g:dotfiles_dir . '/doc/vim/'
 " Installation check for dein.vim
 if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
-    execute '!sh ' . g:dotfiles_dir . '/etc/init/vim-plugin-manager.sh'
+    execute '!sh ' . g:dotfiles_dir . '/etc/init/install-dein-vim.sh'
   endif
   execute 'set runtimepath^=' . s:dein_repo_dir
 endif
