@@ -1,6 +1,6 @@
-" -----------------------------------------------------------------------------
+" -------------------------------------
 " Common settings
-" -----------------------------------------------------------------------------
+" -------------------------------------
 " Defaults sttings for beginners
 source $VIMRUNTIME/defaults.vim
 
@@ -9,10 +9,10 @@ if &compatible
   set nocompatible " Be iMproved
 endif
 
-" -----------------------------------------------------------------------------
+" -------------------------------------
 " Package manager
-" - dein.vim settings
-" -----------------------------------------------------------------------------
+"   dein.vim settings
+" -------------------------------------
 " DIR
 let s:dotfiles_dir = expand('~/wsl-dotfiles')
 let s:dein_dir = s:dotfiles_dir . '/.cache/dein'
@@ -56,12 +56,40 @@ if len(s:removed_plugins) > 0
   call map(s:removed_plugins, "delete(v:val, 'rf')")
 endif
 
-" -----------------------------------------------------------------------------
+" -------------------------------------
 " Custom settings
-" -----------------------------------------------------------------------------
+" -------------------------------------
 " Required from dein.vim:
 filetype plugin indent on
 syntax enable
 
 " To read original help in Japanese
 set helplang=ja
+
+" File Encodings
+set fileencodings=utf-8,cp932
+
+" Line number
+set number
+
+" Persistent undo
+if has('persistent_undo')
+  let s:undo_path = s:dotfiles_dir . '/.cache/undo'
+  if !isdirectory(s:undo_path)
+    call mkdir(s:undo_path, 'p')
+  endif
+  exe 'set undodir=' .. s:undo_path
+  set undofile
+endif
+
+" Indentation
+set smartindent
+
+" Clipboad
+set clipboard+=unnamed
+
+" Statusline
+set laststatus=2
+
+" Show Command-Line completion on statusline
+set wildmenu
