@@ -8,9 +8,6 @@ if &compatible
   set nocompatible " Be iMproved
 endif
 
-" -------------------------------------
-" Global variables
-" -------------------------------------
 " Locations
 let g:dotfiles_dir = expand('~/wsl-dotfiles')
 
@@ -23,6 +20,7 @@ let s:init_dir = s:autoload_dir . '/init'
 let s:plugins_dir = s:autoload_dir . '/plugins'
 
 " Specific settings for init 
+" basic.vim needs to import after plugin-dein.vim
 execute 'source' . s:init_dir . '/plugin-dein.vim'
 execute 'source' . s:init_dir . '/basic.vim'
 
