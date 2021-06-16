@@ -6,31 +6,32 @@ source $VIMRUNTIME/defaults.vim
 
 " -----------------------------------------------------------------------------
 " Package manager
+" - dein.vim settings
 " -----------------------------------------------------------------------------
+" Install dir
+let s:dein_dir = expand('~/wsl-dotfiles/.cache/dein')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+
+" Installation check for dein.vim
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . s:dein_repo_dir
+endif
+
 if &compatible
   set nocompatible " Be iMproved
 endif
 
-" Required:
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/wsl-dotfiles/.cache/dein/repos/github.com/Shougo/dein.vim
+" Begin settings
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
 
-" Required:
-call dein#begin(expand('~/wsl-dotfiles/.cache/dein/'))
-
-" Let dein manage dein
-call dein#add('~/wsl-dotfiles/.cache/dein/repos/github.com/Shougo/dein.vim')
-if !has('nvim')
-  call dein#add('roxma/nvim-yarp')
-  call dein#add('roxma/vim-hug-neovim-rpc')
+  " end settings
+  call dein#end()
+  call dein#save_state()
 endif
-
-" Add or remove your plugins here like this:
-"call dein#add('Shougo/neosnippet.vim')
-"call dein#add('Shougo/neosnippet-snippets')
-
-" Required:
-call dein#end()
 
 " Required:
 filetype plugin indent on
