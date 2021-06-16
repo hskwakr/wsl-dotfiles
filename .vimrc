@@ -13,10 +13,11 @@ endif
 " Package manager
 " - dein.vim settings
 " -----------------------------------------------------------------------------
-" Install dir
+" DIR
 let s:dotfiles_dir = expand('~/wsl-dotfiles')
 let s:dein_dir = s:dotfiles_dir . '/.cache/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+let s:vim_doc_dir = s:dotfiles_dir . '/doc/vim/'
 
 " Installation check for dein.vim
 if &runtimepath !~# '/dein.vim'
@@ -30,7 +31,16 @@ endif
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  " end settings
+  " .tomlfile
+  if !isdirectory(s:vim_doc_dir)
+    call mkdir(s:vim_doc_dir, 'p')
+  endif
+  let s:toml = s:vim_doc_dir . '/dein.toml'
+
+  " Read toml and cache
+  call dein#load_toml(s:toml, {'lazy': 0})
+
+  " End settings
   call dein#end()
   call dein#save_state()
 endif
@@ -52,3 +62,6 @@ endif
 " Required from dein.vim:
 filetype plugin indent on
 syntax enable
+
+" To read original help in Japanese
+set helplang=ja
