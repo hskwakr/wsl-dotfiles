@@ -9,9 +9,6 @@ if &compatible
   set nocompatible " Be iMproved
 endif
 
-filetype plugin indent on
-syntax enable
-
 " -----------------------------------------------------------------------------
 " Package manager
 " - dein.vim settings
@@ -48,3 +45,10 @@ let s:removed_plugins = dein#check_clean()
 if len(s:removed_plugins) > 0
   call map(s:removed_plugins, "delete(v:val, 'rf')")
 endif
+
+" -----------------------------------------------------------------------------
+" Custom settings
+" -----------------------------------------------------------------------------
+" Required from dein.vim:
+filetype plugin indent on
+syntax enable
