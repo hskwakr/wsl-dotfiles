@@ -9,13 +9,15 @@ source $VIMRUNTIME/defaults.vim
 " - dein.vim settings
 " -----------------------------------------------------------------------------
 " Install dir
-let s:dein_dir = expand('~/wsl-dotfiles/.cache/dein')
+let s:dotfiles_dir = expand('~/wsl-dotfiles')
+let s:dein_dir = s:dotfiles_dir . '/.cache/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " Installation check for dein.vim
 if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+    execute 'sh ' . s:dotfiles_dir . '/etc/init/vim-plugin-manager.sh'
   endif
   execute 'set runtimepath^=' . s:dein_repo_dir
 endif
