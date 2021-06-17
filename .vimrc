@@ -15,9 +15,9 @@ let g:dotfiles_dir = expand('~/wsl-dotfiles')
 " Import setting files
 " -------------------------------------
 " Locations
-let s:autoload_dir = g:dotfiles_dir . '/doc/vim/autoload'
-let s:init_dir = s:autoload_dir . '/init'
-let s:plugins_dir = s:autoload_dir . '/plugins'
+let s:vimrc_dir = g:dotfiles_dir . '/doc/vim/vimrc'
+let s:init_dir = s:vimrc_dir . '/init'
+let s:plugins_dir = s:vimrc_dir . '/plugins'
 
 " Specific settings for init 
 execute 'source' . s:init_dir . '/basic.vim'
