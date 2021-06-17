@@ -31,4 +31,3 @@ set laststatus=2
 
 " Show Command-Line completion on statusline
 set wildmenu
-
