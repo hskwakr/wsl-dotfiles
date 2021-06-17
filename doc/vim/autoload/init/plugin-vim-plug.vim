@@ -20,9 +20,24 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : s:plugins_dir)
 
 " Declare the list of plugins.
+" -------------------------------------
+" For offial help in Japanese
 Plug 'vim-jp/vimdoc-ja'
+
+" For colorscheme
 Plug 'sainnhe/gruvbox-material'
 Plug 'itchyny/lightline.vim'
 
+" For language server protcol
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+
+" -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
