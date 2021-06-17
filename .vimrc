@@ -27,3 +27,4 @@ execute 'source' . s:init_dir . '/basic.vim'
 
 " Specific settings for plugins 
 execute 'source' . s:plugins_dir . '/plugins-vimdoc-ja.vim'
+execute 'source' . s:plugins_dir . '/plugins-gruvbox-material.vim'

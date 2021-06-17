@@ -21,6 +21,8 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : s:plugins_dir)
 
 " Declare the list of plugins.
 Plug 'vim-jp/vimdoc-ja'
+Plug 'sainnhe/gruvbox-material'
+Plug 'itchyny/lightline.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
