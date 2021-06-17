@@ -18,9 +18,10 @@ set background=dark
 " Available values: 'hard', 'medium'(default), 'soft'
 let g:gruvbox_material_background = 'soft'
 
-colorscheme gruvbox-material
+" Custom configulations
+" see :help gruvbox-material-configulation
+let g:gruvbox_material_diagnostic_text_highlight = 1
 
-" For lightline.vim
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox_material'
-
+if index(getcompletion('', 'color'), 'gruvbox-material') >= 0 
+  colorscheme gruvbox-material
+endif
