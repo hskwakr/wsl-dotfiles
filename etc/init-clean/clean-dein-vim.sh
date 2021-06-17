@@ -1,5 +1,5 @@
 #!/bin/sh
-# Clean dein.vim with a way following below site.
+# Clean dein.vim
 # https://github.com/Shougo/dein.vim
 
 DOT_DIR="$HOME/wsl-dotfiles"
