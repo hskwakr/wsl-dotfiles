@@ -1,4 +1,0 @@
-# TOML FOR DEIN
-
-[[plugins]]
-repo = 'vim-jp/vimdoc-ja'
