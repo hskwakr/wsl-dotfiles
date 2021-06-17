@@ -21,7 +21,8 @@ let s:plugins_dir = s:autoload_dir . '/plugins'
 
 " Specific settings for init 
 " basic.vim needs to import after plugin-dein.vim
-execute 'source' . s:init_dir . '/plugin-dein.vim'
+"execute 'source' . s:init_dir . '/plugin-dein.vim'
+execute 'source' . s:init_dir . '/plugin-vim-plug.vim'
 execute 'source' . s:init_dir . '/basic.vim'
 
 " Specific settings for plugins 

@@ -2,8 +2,7 @@
 # Install vim-plug with a way following below site.
 # https://github.com/junegunn/vim-plug
 
-DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="${DOT_DIR}/.cache/vim-plug"
+INSTALL_DIR="$HOME/.vim/autoload"
 
 has() {
 	type "$1" >/dev/null 2>&1
