@@ -27,7 +27,7 @@ augroup lsp_install
   au!
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
-command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = expand(s:lsp_settings_dir . '/lsp.log')
+command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = s:lsp_settings_dir . '/lsp.log'
 
 let g:lsp_diagnostics_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
