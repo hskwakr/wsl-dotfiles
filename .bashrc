@@ -117,6 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 # Import custom bashrc
-if [ -f ${HOME}/wsl-dotfiles/doc/bashrc/.bashrc_basic ]; then
-  source ${HOME}/wsl-dotfiles/doc/bashrc/.bashrc_basic
+if [ -f ${HOME}/wsl-dotfiles/doc/bashrc/bashrc_basic.sh ]; then
+  source ${HOME}/wsl-dotfiles/doc/bashrc/bashrc_basic.sh
 fi
