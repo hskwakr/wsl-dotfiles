@@ -4,9 +4,7 @@
 
 INSTALL_DIR="$HOME/.vim/autoload"
 
-has() {
-	type "$1" >/dev/null 2>&1
-}
+. "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if [ ! -d "${INSTALL_DIR}" ]; then
 	mkdir -p "${INSTALL_DIR}"
