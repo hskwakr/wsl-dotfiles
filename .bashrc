@@ -149,6 +149,7 @@ psColor4="\[\e[0;${reset}m\]"
 
 #--------------------------------------
 # Functions
+# Read enviroment variables which is named ${PROMPT_COMMAND_*}
 dispatch () {
 	export EXIT_STATUS="$?" # error code of latest command
 	local f
