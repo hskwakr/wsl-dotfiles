@@ -15,7 +15,7 @@ let g:dotfiles_dir = expand('~/wsl-dotfiles')
 " Import setting files
 " -------------------------------------
 " Locations
-let s:vimrc_dir = g:dotfiles_dir . '/doc/vim/vimrc'
+let s:vimrc_dir = g:dotfiles_dir . '/doc/vimrc'
 let s:init_dir = s:vimrc_dir . '/init'
 let s:plugins_dir = s:vimrc_dir . '/plugins'
 

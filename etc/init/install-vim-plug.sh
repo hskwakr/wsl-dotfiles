@@ -2,6 +2,7 @@
 # Install vim-plug with a way following below site.
 # https://github.com/junegunn/vim-plug
 
+DOT_DIR="$HOME/wsl-dotfiles"
 INSTALL_DIR="$HOME/.vim/autoload"
 
 . "${DOT_DIR}/etc/lib/sh/has.sh"
