@@ -62,3 +62,9 @@ export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${p
 export NVM_DIR="${DOTFILES}/.cache/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#--------------------------------------
+# Init Order
+
+# Start from $HOME
+cd ${HOME}
