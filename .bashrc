@@ -165,4 +165,3 @@ export EDITOR=vim
 # PROMT_COMMAND
 export PROMPT_COMMAND="dispatch"
 export PROMPT_COMMAND_PS1='__git_ps1 "${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}" "${psColor4}\\\$ "'
-
