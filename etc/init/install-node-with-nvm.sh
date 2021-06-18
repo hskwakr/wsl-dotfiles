@@ -12,6 +12,7 @@ if ! has "node"; then
 	fi
 
 	echo "Start installing node ..."
+	# shellcheck disable=SC1091
 	. "${NVM_DIR}/nvm.sh"
 	nvm install "lts/*" --reinstall-packages-from=current
 else
