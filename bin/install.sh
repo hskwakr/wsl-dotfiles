@@ -2,9 +2,7 @@
 
 DOT_DIR="$HOME/wsl-dotfiles"
 
-has() {
-	type "$1" >/dev/null 2>&1
-}
+. "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if [ ! -d "${DOT_DIR}" ]; then
 	if has "git"; then
