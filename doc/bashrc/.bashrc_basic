@@ -35,7 +35,7 @@ psColor4="\[\e[0;${reset}m\]"
 # Functions
 
 # Read enviroment variables which is named ${PROMPT_COMMAND_*}
-dispatch () {
+dispatch() {
 	export EXIT_STATUS="$?" # error code of latest command
 	local f
 	for f in ${!PROMPT_COMMAND_*}; do
@@ -56,7 +56,7 @@ export EDITOR=vim
 
 # PROMT_COMMAND
 export PROMPT_COMMAND="dispatch"
-export PROMPT_COMMAND_PS1='__git_ps1 "${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}" "${psColor4}\\\$ "'
+export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}' '${psColor4}\\\$ '"
 
 # Node Version Manager
 export NVM_DIR="${DOTFILES}/.cache/.nvm"
