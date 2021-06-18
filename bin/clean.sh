@@ -3,7 +3,7 @@
 # Remove dotfiles and this repository
 DOT_DIR="${HOME}/wsl-dotfiles"
 if [ -d "${DOT_DIR}" ]; then
-	sh "${DOT_DIR}/bin/init-clean.sh"
+	sh "${DOT_DIR}/bin/run-clean-scripts.sh"
 
 	cd "${DOT_DIR}" || exit 1
 	echo "Remove linked dot files from dotfiles repository..."
