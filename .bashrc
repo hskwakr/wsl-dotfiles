@@ -161,6 +161,7 @@ dispatch () {
 
 #--------------------------------------
 # Enviroment Variables
+# Editor for general usage
 export EDITOR=vim
 
 # PROMT_COMMAND
