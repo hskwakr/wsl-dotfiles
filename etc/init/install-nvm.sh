@@ -18,6 +18,7 @@ if [ ! -d "${INSTALL_DIR}" ]; then
 		git checkout v0.38.0
 		# shellcheck disable=SC1091
 		. ./nvm.sh
+		. "${DOT_DIR}/.bashrc"
 	else
 		echo "git required"
 		exit 1
