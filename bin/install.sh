@@ -2,7 +2,10 @@
 
 DOT_DIR="$HOME/wsl-dotfiles"
 
-. "${DOT_DIR}/etc/lib/sh/has.sh"
+# At this time, cannot use ${DOT_DIR}/etc/lib/sh/has.sh
+has() {
+	type "$1" >/dev/null 2>&1
+}
 
 if [ ! -d "${DOT_DIR}" ]; then
 	if has "git"; then
