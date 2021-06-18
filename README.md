@@ -6,6 +6,11 @@
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/main/bin/install.sh)"
 ```
 
+### Init
+```sh
+cd ~ && ./wsl-dotfiles/bin/init.sh
+```
+
 ### Uninstall
 ```sh
 cd ~ && ./wsl-dotfiles/bin/clean.sh
