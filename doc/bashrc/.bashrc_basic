@@ -2,6 +2,7 @@
 # CUSTOM .BASHRC SETTINGS
 #--------------------------------------
 # Local Variables
+
 # Colors
 reset="0"
 red="31"
@@ -31,6 +32,7 @@ psColor4="\[\e[0;${reset}m\]"
 
 #--------------------------------------
 # Functions
+
 # Read enviroment variables which is named ${PROMPT_COMMAND_*}
 dispatch () {
 	export EXIT_STATUS="$?" # error code of latest command
@@ -43,9 +45,20 @@ dispatch () {
 
 #--------------------------------------
 # Enviroment Variables
+
+# Location for dotfiles repo.
+# Only for .bashrc. Do NOT use this variable in scripts.
+export DOTFILES="${HOME}/wsl-dotfiles"
+
 # Editor for general usage
 export EDITOR=vim
 
 # PROMT_COMMAND
 export PROMPT_COMMAND="dispatch"
 export PROMPT_COMMAND_PS1='__git_ps1 "${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}" "${psColor4}\\\$ "'
+
+# Node Version Manager
+export NVM_DIR="${DOTFILES}/.cache/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
