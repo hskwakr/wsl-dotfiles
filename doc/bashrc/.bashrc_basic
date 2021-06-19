@@ -64,6 +64,10 @@ export NVM_DIR="${DOTFILES}/.cache/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #--------------------------------------
+# Aliases
+alias gs="git status"
+
+#--------------------------------------
 # Init Order
 
 # Start from $HOME
