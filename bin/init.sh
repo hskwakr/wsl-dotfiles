@@ -9,6 +9,8 @@ if [ -d "${SCRIPTS_DIR}" ]; then
 		echo "Run ${f}..."
 		sh "${f}"
 	done
+	# shellcheck disable=SC1091
+	. "${DOT_DIR}/.bashrc"
 else
 	echo "${SCRIPTS_DIR} does not exist"
 	exit 1
