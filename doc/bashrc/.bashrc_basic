@@ -48,7 +48,7 @@ dispatch() {
 # Enviroment Variables
 
 # Location for dotfiles repo.
-# Only for .bashrc. Do NOT use this variable in scripts.
+# Only for .bashrc. Do NOT use this variable on other scripts.
 export DOTFILES="${HOME}/wsl-dotfiles"
 
 # Editor for general usage
@@ -71,15 +71,11 @@ export NVM_DIR="${DOTFILES}/.cache/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# fzf key bindings
+# fzf
 [ -s /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
+[ -s /usr/share/doc/fzf/examples/completion.bash ] && source /usr/share/doc/fzf/examples/completion.bash
+[ -s ${DOTFILES}/doc/bashrc/.bashrc_fzf ] && source ${DOTFILES}/doc/bashrc/.bashrc_fzf
 
 #--------------------------------------
 # Aliases
 alias gs="git status"
-
-#--------------------------------------
-# Init Order
-
-# Start from $HOME
-cd ${HOME}
