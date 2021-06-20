@@ -6,7 +6,7 @@
 
 # locaiotns
 fzf_keybinds_path="/usr/share/doc/fzf/examples/key-bindings.bash"
-fzf_completion_path="${DOTFILES}/doc/fzf/completion.bash"
+fzf_completion_path="${DOTFILES}/doc/fzf/completion"
 
 # key bindings
 [ -s ${fzf_keybinds_path} ] && source ${fzf_keybinds_path}
