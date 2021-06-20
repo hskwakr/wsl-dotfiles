@@ -4,6 +4,15 @@
 # For fzf
 #--------------------------------------
 
+# locaiotns
+fzf_keybinds_path="/usr/share/doc/fzf/examples/key-bindings.bash"
+fzf_completion_path="${DOTFILES}/doc/fzf/completion.bash"
+
+# key bindings
+[ -s ${fzf_keybinds_path} ] && source ${fzf_keybinds_path}
+# completion
+[ -s ${fzf_completion_path} ] && source ${fzf_completion_path} 
+
 export FZF_DEFAULT_OPTS="
 --layout=reverse
 --info=inline
@@ -14,3 +23,22 @@ export FZF_DEFAULT_OPTS="
 --bind '?:toggle-preview'
 --bind 'ctrl-a:select-all'
 "
+
+# fzf's command
+export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude 'node_modules'"
+# CTRL-T's command
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# ALT-C's command
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+
+#--------------------------------------
+# Functions
+
+# # find-in-file - usage: fif <SEARCH_TERM>
+fif() {
+  if [ ! "$#" -gt 0 ]; then
+    echo "Need a string to search for!";
+    return 1;
+  fi
+  rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW --preview "rg --ignore-case --pretty --context 10 '$1' {}"
+}
