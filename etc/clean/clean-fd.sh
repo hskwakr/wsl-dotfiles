@@ -1,16 +1,16 @@
 #!/bin/sh
-# Remove bat
+# Remove fd
 
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
-if has "bat"; then
-	echo "Remove bat ..."
+if has "fd"; then
+	echo "Remove fd ..."
 
-	sudo dpkg -r bat
+	sudo dpkg -r fd
 	# shellcheck disable=SC1091
 	. "${DOT_DIR}/.bashrc"
 else
-	echo "bat is already removed"
+	echo "fd is already removed"
 	exit 1
 fi
