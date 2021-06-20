@@ -60,8 +60,15 @@ export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${p
 
 # Node Version Manager
 export NVM_DIR="${DOTFILES}/.cache/.nvm"
+
+#--------------------------------------
+# Import configurations
+
+# Node Version Manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -s /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
 
 #--------------------------------------
 # Aliases
