@@ -77,3 +77,9 @@ export NVM_DIR="${DOTFILES}/.cache/.nvm"
 #--------------------------------------
 # Aliases
 alias gs="git status"
+
+#--------------------------------------
+# Init commands
+
+# z.sh
+[ -s "${DOTFILES}/.cache/z.sh" ] && . "${DOTFILES}/.cache/z.sh" 
