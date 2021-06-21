@@ -8,8 +8,6 @@ if has "bat"; then
 	echo "Remove bat ..."
 
 	sudo dpkg -r bat
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "bat is already removed"
 	exit 1

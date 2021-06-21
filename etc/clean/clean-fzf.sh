@@ -10,8 +10,6 @@ if has "fzf"; then
 
 	sudo apt update
 	sudo apt remove fzf
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "fzf is already removed"
 	exit 1

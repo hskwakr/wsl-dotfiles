@@ -15,9 +15,6 @@ if ! has "z"; then
 	fi
 
 	wget -O "${INSTALL_ITEM}" "https://raw.githubusercontent.com/rupa/z/master/z.sh"
-
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "z is already installed"
 	exit 1

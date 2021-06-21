@@ -8,8 +8,6 @@ if has "fd"; then
 	echo "Remove fd ..."
 
 	sudo dpkg -r fd
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "fd is already removed"
 	exit 1

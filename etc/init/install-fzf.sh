@@ -10,8 +10,6 @@ if ! has "fzf"; then
 
 	sudo apt update
 	sudo apt install fzf
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "fzf is already installed"
 	exit 1

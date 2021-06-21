@@ -10,8 +10,6 @@ if has "rg"; then
 
 	sudo apt update
 	sudo apt remove ripgrep
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "rg is already removed"
 	exit 1

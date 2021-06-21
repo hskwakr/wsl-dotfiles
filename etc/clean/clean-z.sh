@@ -9,8 +9,6 @@ if [ -s ${REMOVE_ITEM} ]; then
 	echo "Remove z ..."
 
 	rm -rvf ${REMOVE_ITEM}
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "z is already removed"
 	exit 1

@@ -19,8 +19,6 @@ if ! has "bat"; then
 	sudo dpkg -i "${INSTALL_ITEM}"
 
 	rm -rf "${INSTALL_ITEM}"
-	# shellcheck disable=SC1091
-	. "${DOT_DIR}/.bashrc"
 else
 	echo "bat is already installed"
 	exit 1
