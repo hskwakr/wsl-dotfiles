@@ -15,7 +15,7 @@ cd ~ && ./wsl-dotfiles/bin/init.sh && . .bashrc
 
 ### Uninstall
 ```sh
-cd ~ && ./wsl-dotfiles/bin/clean.sh && . .bashrc
+cd ~ && ./wsl-dotfiles/bin/clean.sh
 ```
 
 ### How to deal with Git line ending issues between Windows and WSL.
