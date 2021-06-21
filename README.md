@@ -1,6 +1,8 @@
 # wsl-dotfiles
 [![CI](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml)
 
+It is for Ubuntu 20.04.2 LTS on WSL.
+
 ### Install
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/main/bin/install.sh)"
