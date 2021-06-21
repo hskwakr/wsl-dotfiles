@@ -12,7 +12,7 @@ if [ ! -d "${INSTALL_DIR}" ]; then
 fi
 
 if has "curl"; then
-	echo "Start installing vim-plug ..."
+	echo "\n\nStart installing vim-plug ..."
 
 	curl -fLo "${INSTALL_DIR}/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 else

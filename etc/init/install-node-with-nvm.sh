@@ -11,7 +11,7 @@ if ! has "node"; then
 		sh "${DOT_DIR}/etc/init/install-nvm.sh"
 	fi
 
-	echo "Start installing node ..."
+	echo "\n\nStart installing node ..."
 	# shellcheck disable=SC1091
 	. "${NVM_DIR}/nvm.sh"
 	nvm install "lts/*" --reinstall-packages-from=current
