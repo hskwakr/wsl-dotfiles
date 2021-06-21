@@ -8,12 +8,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/mai
 
 ### Init
 ```sh
-cd ~ && ./wsl-dotfiles/bin/init.sh
+cd ~ && ./wsl-dotfiles/bin/init.sh && . .bashrc
 ```
 
 ### Uninstall
 ```sh
-cd ~ && ./wsl-dotfiles/bin/clean.sh
+cd ~ && ./wsl-dotfiles/bin/clean.sh && . .bashrc
 ```
 
 ### How to deal with Git line ending issues between Windows and WSL.
