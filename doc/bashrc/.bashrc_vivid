@@ -1,0 +1,11 @@
+#!/bin/bash
+#--------------------------------------
+# CUSTOM .BASHRC SETTINGS
+# For vivid
+#--------------------------------------
+
+. "${DOTFILES}/etc/lib/sh/has.sh"
+
+if has "vivid"; then
+  export LS_COLORS="$(vivid generate molokai)"
+fi

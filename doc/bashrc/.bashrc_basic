@@ -73,6 +73,8 @@ export NVM_DIR="${DOTFILES}/.cache/.nvm"
 
 # fzf
 [ -s ${DOTFILES}/doc/bashrc/.bashrc_fzf ] && source ${DOTFILES}/doc/bashrc/.bashrc_fzf
+# vivid
+[ -s ${DOTFILES}/doc/bashrc/.bashrc_vivid ] && source ${DOTFILES}/doc/bashrc/.bashrc_vivid
 
 #--------------------------------------
 # Aliases
