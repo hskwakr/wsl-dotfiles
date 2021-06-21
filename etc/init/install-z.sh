@@ -17,7 +17,7 @@ if ! has "z"; then
 		exit 1
 	fi
 
-	echo "\n\nStart installing z ..."
+	printf "\n\nStart installing z ..."
 
 	wget -O "${INSTALL_ITEM}" "https://raw.githubusercontent.com/rupa/z/master/z.sh"
 else

@@ -5,7 +5,7 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "tree"; then
-	echo "\n\nStart installing tree ..."
+	printf "\n\nStart installing tree ..."
 
 	sudo apt update
 	sudo apt install tree

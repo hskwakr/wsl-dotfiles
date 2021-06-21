@@ -17,7 +17,7 @@ if ! has "bat"; then
 		exit 1
 	fi
 
-	echo "\n\nStart installing bat ..."
+	printf "\n\nStart installing bat ..."
 
 	wget -O "${INSTALL_ITEM}" "https://github.com/sharkdp/bat/releases/download/v0.18.1/bat_0.18.1_amd64.deb"
 	# adapt version number and architecture

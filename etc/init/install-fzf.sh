@@ -6,7 +6,7 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "fzf"; then
-	echo "\n\nStart installing fzf ..."
+	printf "\n\nStart installing fzf ..."
 
 	sudo apt update
 	sudo apt install fzf
