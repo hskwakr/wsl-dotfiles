@@ -1,15 +1,30 @@
 #!/bin/sh
 
 SCRIPTS_DIR="$HOME/wsl-dotfiles/etc/init"
+BUILD_TOOL_DIR="${SCRIPTS_DIR}/build-tools"
+UTIL_TOOL_DIR="${SCRIPTS_DIR}/util-tools"
 
-if [ -d "${SCRIPTS_DIR}" ]; then
-	echo "Start runing init scripts..."
-	cd "${SCRIPTS_DIR}" || exit 1
+run_scripts() {
 	for f in *.sh; do
 		echo "Run ${f}..."
 		sh "${f}"
 	done
+}
+
+if [ -d "${BUILD_TOOL_DIR}" ]; then
+	print "\n\nStart runing init scripts in build-tools..."
+	cd "${BUILD_TOOL_DIR}" || exit 1
+	run_scripts
 else
-	echo "${SCRIPTS_DIR} does not exist"
+	echo "${BUILD_TOOL_DIR} does not exist"
+	exit 1
+fi
+
+if [ -d "${UTIL_TOOL_DIR}" ]; then
+	print "\n\nStart runing init scripts in util-tools..."
+	cd "${UTIL_TOOL_DIR}" || exit 1
+	run_scripts
+else
+	echo "${UTIL_TOOL_DIR} does not exist"
 	exit 1
 fi
