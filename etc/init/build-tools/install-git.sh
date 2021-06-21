@@ -1,6 +1,6 @@
 #!/bin/sh
 # Install git with a way following below site.
-# https://git-scm.com/download/linux 
+# https://git-scm.com/download/linux
 
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
