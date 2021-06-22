@@ -1,9 +1,6 @@
 " -------------------------------------
 " Custom settings
 " -------------------------------------
-filetype plugin indent on
-syntax enable
-
 " File Encodings
 set fileencodings=utf-8,cp932
 

@@ -11,6 +11,10 @@ endif
 " Locations
 let g:dotfiles_dir = expand('~/wsl-dotfiles')
 
+" General settings
+filetype plugin indent on
+syntax enable
+
 " -------------------------------------
 " Import setting files
 " -------------------------------------
