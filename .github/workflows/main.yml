@@ -28,3 +28,5 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: luizm/action-sh-checker@7f44869033b40ee4ffe7dc76c87a1bc66e3d025a
         uses: luizm/action-sh-checker@v0.3.0
+        env:
+          SHFMT_OPTS: -i 2
