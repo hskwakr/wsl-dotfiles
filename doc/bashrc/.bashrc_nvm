@@ -1,0 +1,14 @@
+#!/bin/bash
+#--------------------------------------
+# CUSTOM .BASHRC SETTINGS
+# For nvm
+#--------------------------------------
+# Enviroment variables
+export NVM_DIR="${DOTFILES}/.cache/.nvm"
+
+#--------------------------------------
+# Import configurations
+
+# Node Version Manager
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -1,0 +1,8 @@
+#!/bin/bash
+#--------------------------------------
+# CUSTOM .BASHRC SETTINGS
+# For go
+#--------------------------------------
+# Enviroment variables
+export GOPATH="${DOTFILES}/.cache/mygo"
+export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"

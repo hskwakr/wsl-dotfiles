@@ -65,16 +65,13 @@ export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${p
 export GOPATH="${DOTFILES}/.cache/mygo"
 export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 
-# Node Version Manager
-export NVM_DIR="${DOTFILES}/.cache/.nvm"
-
 #--------------------------------------
 # Import configurations
 
-# Node Version Manager
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+# go
+[ -s ${DOTFILES}/doc/bashrc/.bashrc_go ] && source ${DOTFILES}/doc/bashrc/.bashrc_go
+# nvm
+[ -s ${DOTFILES}/doc/bashrc/.bashrc_nvm ] && source ${DOTFILES}/doc/bashrc/.bashrc_nvm
 # fzf
 [ -s ${DOTFILES}/doc/bashrc/.bashrc_fzf ] && source ${DOTFILES}/doc/bashrc/.bashrc_fzf
 # vivid
