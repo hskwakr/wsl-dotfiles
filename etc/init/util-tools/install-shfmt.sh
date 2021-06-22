@@ -7,7 +7,7 @@ DOT_DIR="$HOME/wsl-dotfiles"
 
 if has "go"; then
   printf "\n\n"
-  echo "Start installing go ..."
+  echo "Start installing shfmt ..."
   GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 else
   echo "go required"
