@@ -26,6 +26,7 @@ let s:plugins_dir = s:vimrc_dir . '/plugins'
 " Specific settings for init 
 execute 'source' . s:init_dir . '/basic.vim'
 execute 'source' . s:init_dir . '/plugin-vim-plug.vim'
+execute 'source' . s:init_dir . '/indent.vim'
 
 " Specific settings for plugins 
 execute 'source' . s:plugins_dir . '/plugins-vimdoc-ja.vim'
