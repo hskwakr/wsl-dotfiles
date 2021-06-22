@@ -15,7 +15,8 @@ if ! has "tar" && has "wget"; then
   exit 1
 fi
 
-printf "\n\nStart installing go ..."
+printf "\n\n"
+echo "Start installing go ..."
 
 wget -O "${DOWNLOAD_DIR}/go1.16.5.linux-amd64.tar.gz" "https://golang.org/dl/go1.16.5.linux-amd64.tar.gz"
 

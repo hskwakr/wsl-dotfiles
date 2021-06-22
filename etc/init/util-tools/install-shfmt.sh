@@ -6,7 +6,8 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "go"; then
-  printf "\n\nStart installing go ..."
+  printf "\n\n"
+  echo "Start installing go ..."
   GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 else
   echo "go required"

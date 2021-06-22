@@ -13,7 +13,8 @@ run_scripts() {
 }
 
 if [ -d "${BUILD_TOOL_DIR}" ]; then
-  print "\n\nStart runing init scripts in build-tools..."
+  print "\n\n"
+  echo "Start runing init scripts in build-tools..."
   cd "${BUILD_TOOL_DIR}" || exit 1
   run_scripts
 else
@@ -22,7 +23,8 @@ else
 fi
 
 if [ -d "${RUNTIME_DIR}" ]; then
-  print "\n\nStart runing init scripts in programming-runtime..."
+  print "\n\n"
+  echo "Start runing init scripts in programming-runtime..."
   cd "${RUNTIME_DIR}" || exit 1
   run_scripts
 else
@@ -31,7 +33,8 @@ else
 fi
 
 if [ -d "${UTIL_TOOL_DIR}" ]; then
-  print "\n\nStart runing init scripts in util-tools..."
+  print "\n\n"
+  echo "Start runing init scripts in util-tools..."
   cd "${UTIL_TOOL_DIR}" || exit 1
   run_scripts
 else

@@ -17,7 +17,8 @@ if ! has "vivid"; then
     exit 1
   fi
 
-  printf "\n\nStart installing vivid ..."
+  printf "\n\n"
+  echo "Start installing vivid ..."
 
   wget -O "${INSTALL_ITEM}" "https://github.com/sharkdp/vivid/releases/download/v0.7.0/vivid_0.7.0_amd64.deb"
   # adapt version number and architecture

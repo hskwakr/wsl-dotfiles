@@ -11,7 +11,8 @@ if [ ! -d "${INSTALL_DIR}" ]; then
   mkdir -p "${INSTALL_DIR}"
 
   if has "git"; then
-    printf "\n\nStart installing nvm ..."
+    printf "\n\n"
+    echo "Start installing nvm ..."
 
     git clone https://github.com/nvm-sh/nvm.git "${INSTALL_DIR}"
     cd "${INSTALL_DIR}" || exit 1
