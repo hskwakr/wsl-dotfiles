@@ -5,10 +5,10 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "bat"; then
-	echo "Remove bat ..."
+  echo "Remove bat ..."
 
-	sudo dpkg -r bat
+  sudo dpkg -r bat
 else
-	echo "bat is already removed"
-	exit 1
+  echo "bat is already removed"
+  exit 1
 fi

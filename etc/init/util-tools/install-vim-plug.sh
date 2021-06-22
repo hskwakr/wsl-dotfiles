@@ -8,14 +8,14 @@ INSTALL_DIR="$HOME/.vim/autoload"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if [ ! -d "${INSTALL_DIR}" ]; then
-	mkdir -p "${INSTALL_DIR}"
+  mkdir -p "${INSTALL_DIR}"
 fi
 
 if has "curl"; then
-	printf "\n\nStart installing vim-plug ..."
+  printf "\n\nStart installing vim-plug ..."
 
-	curl -fLo "${INSTALL_DIR}/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  curl -fLo "${INSTALL_DIR}/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 else
-	echo "curl required"
-	exit 1
+  echo "curl required"
+  exit 1
 fi

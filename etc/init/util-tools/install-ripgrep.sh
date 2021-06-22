@@ -6,11 +6,11 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "rg"; then
-	printf "\n\nStart installing ripgrep ..."
+  printf "\n\nStart installing ripgrep ..."
 
-	sudo apt update
-	sudo apt install ripgrep
+  sudo apt update
+  sudo apt install ripgrep
 else
-	echo "rg is already installed"
-	exit 1
+  echo "rg is already installed"
+  exit 1
 fi

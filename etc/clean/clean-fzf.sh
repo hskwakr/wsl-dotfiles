@@ -6,11 +6,11 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "fzf"; then
-	echo "Remove fzf ..."
+  echo "Remove fzf ..."
 
-	sudo apt update
-	sudo apt remove fzf
+  sudo apt update
+  sudo apt remove fzf
 else
-	echo "fzf is already removed"
-	exit 1
+  echo "fzf is already removed"
+  exit 1
 fi

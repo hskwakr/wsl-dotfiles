@@ -7,6 +7,6 @@ DOT_DIR="$HOME/wsl-dotfiles"
 
 printf "\n\nStart installing git ..."
 if ! has "git"; then
-	sudo apt update
-	sudo apt install git
+  sudo apt update
+  sudo apt install git
 fi

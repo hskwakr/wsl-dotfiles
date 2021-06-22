@@ -6,11 +6,11 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "rg"; then
-	echo "Remove ripgrep ..."
+  echo "Remove ripgrep ..."
 
-	sudo apt update
-	sudo apt remove ripgrep
+  sudo apt update
+  sudo apt remove ripgrep
 else
-	echo "rg is already removed"
-	exit 1
+  echo "rg is already removed"
+  exit 1
 fi
