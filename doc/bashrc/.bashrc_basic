@@ -61,6 +61,9 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p --pager=\"less -FR\"'"
 export PROMPT_COMMAND="dispatch"
 export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}' '${psColor4}\\\$ '"
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+
 # Node Version Manager
 export NVM_DIR="${DOTFILES}/.cache/.nvm"
 
