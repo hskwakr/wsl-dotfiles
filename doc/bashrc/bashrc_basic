@@ -15,17 +15,17 @@ export EDITOR=vim
 bashrc_dir="${DOTFILES}/doc/bashrc"
 
 # prompt
-[ -s ${bashrc_dir}/bashrc_prompt ]  && source ${bashrc_dir}/bashrc_prompt
+[ -s "${bashrc_dir}/bashrc_prompt" ]  && source "${bashrc_dir}/bashrc_prompt"
 # go
-[ -s ${bashrc_dir}/bashrc_go ]      && source ${bashrc_dir}/bashrc_go
-# nvm
-[ -s ${bashrc_dir}/bashrc_nvm ]     && source ${bashrc_dir}/bashrc_nvm
+[ -s "${bashrc_dir}/bashrc_go" ]      && source "${bashrc_dir}/bashrc_go"
+# nvm"
+[ -s "${bashrc_dir}/bashrc_nvm" ]     && source "${bashrc_dir}/bashrc_nvm"
 # bat
-[ -s ${bashrc_dir}/bashrc_bat ]     && source ${bashrc_dir}/bashrc_bat
+[ -s "${bashrc_dir}/bashrc_bat" ]     && source "${bashrc_dir}/bashrc_bat"
 # fzf
-[ -s ${bashrc_dir}/bashrc_fzf ]     && source ${bashrc_dir}/bashrc_fzf
+[ -s "${bashrc_dir}/bashrc_fzf" ]     && source "${bashrc_dir}/bashrc_fzf"
 # vivid
-[ -s ${bashrc_dir}/bashrc_vivid ]   && source ${bashrc_dir}/bashrc_vivid
+[ -s "${bashrc_dir}/bashrc_vivid" ]   && source "${bashrc_dir}/bashrc_vivid"
 
 #--------------------------------------
 # Aliases
