@@ -2,53 +2,9 @@
 #--------------------------------------
 # CUSTOM .BASHRC SETTINGS
 #--------------------------------------
-# Local Variables
-
-# Colors
-reset="0"
-red="31"
-green="32"
-yellow="33"
-blue="34"
-magenta="35"
-cyan="36"
-
-lightGray="37"
-darkGray="90"
-
-lightRed="91"
-lightGreen="92"
-lightYellow="93"
-lightBlue="94"
-lightMagenta="95"
-lightCyan="96"
-
-white="97"
-
-# Custom Prompt
-psColor1="\[\e[2;${green}m\]"
-psColor2="\[\e[0;${lightBlue}m\]"
-psColor3="\[\e[0;${lightRed}m\]"
-psColor4="\[\e[0;${reset}m\]"
-
-#--------------------------------------
-# Functions
-
-# Read enviroment variables which is named ${PROMPT_COMMAND_*}
-dispatch() {
-	export EXIT_STATUS="$?" # error code of latest command
-	local f
-	for f in ${!PROMPT_COMMAND_*}; do
-		eval "${!f}"
-	done
-	unset f
-}
-
-#--------------------------------------
 # Enviroment Variables
 
 # Location for dotfiles repo.
-# Only for .bashrc. Do NOT use this variable on other scripts.
 export DOTFILES="${HOME}/wsl-dotfiles"
 
 # Editor for general usage
@@ -57,27 +13,26 @@ export EDITOR=vim
 # Pager for manual
 export MANPAGER="sh -c 'col -bx | bat -l man -p --pager=\"less -FR\"'"
 
-# PROMT_COMMAND
-export PROMPT_COMMAND="dispatch"
-export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}' '${psColor4}\\\$ '"
-
 #--------------------------------------
 # Import configurations
+bashrc_dir="${DOTFILES}/doc/bashrc"
 
+# prompt
+[ -s ${bashrc_dir}/bashrc_prompt ]  && source ${bashrc_dir}/bashrc_prompt
 # go
-[ -s ${DOTFILES}/doc/bashrc/bashrc_go ]     && source ${DOTFILES}/doc/bashrc/bashrc_go
+[ -s ${bashrc_dir}/bashrc_go ]      && source ${bashrc_dir}/bashrc_go
 # nvm
-[ -s ${DOTFILES}/doc/bashrc/bashrc_nvm ]    && source ${DOTFILES}/doc/bashrc/bashrc_nvm
+[ -s ${bashrc_dir}/bashrc_nvm ]     && source ${bashrc_dir}/bashrc_nvm
 # fzf
-[ -s ${DOTFILES}/doc/bashrc/bashrc_fzf ]    && source ${DOTFILES}/doc/bashrc/bashrc_fzf
+[ -s ${bashrc_dir}/bashrc_fzf ]     && source ${bashrc_dir}/bashrc_fzf
 # vivid
-[ -s ${DOTFILES}/doc/bashrc/bashrc_vivid ]  && source ${DOTFILES}/doc/bashrc/bashrc_vivid
+[ -s ${bashrc_dir}/bashrc_vivid ]   && source ${bashrc_dir}/bashrc_vivid
 
 #--------------------------------------
 # Aliases
+
 # cd
 alias ..="cd .."
-
 # git
 alias gst="git status"
 
