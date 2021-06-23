@@ -61,10 +61,6 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p --pager=\"less -FR\"'"
 export PROMPT_COMMAND="dispatch"
 export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}' '${psColor4}\\\$ '"
 
-# Go
-export GOPATH="${DOTFILES}/.cache/mygo"
-export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
-
 #--------------------------------------
 # Import configurations
 
@@ -79,6 +75,10 @@ export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 
 #--------------------------------------
 # Aliases
+# cd
+alias ..="cd .."
+
+# git
 alias gst="git status"
 
 #--------------------------------------
