@@ -13,9 +13,9 @@ if [ -d "${DOT_DIR}" ]; then
     [ "$f" "=" ".gitignore" ] && continue
     [ "$f" "=" ".gitattributes" ] && continue
 
-    rm -rvf "${HOME:?}/${f}"
+    sudo rm -rvf "${HOME:?}/${f}"
   done
-  rm -rf "${DOT_DIR:?}"
+  sudo rm -rf "${DOT_DIR:?}"
 else
   echo "dotfiles does not exists"
   exit 1
