@@ -65,13 +65,13 @@ export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${p
 # Import configurations
 
 # go
-[ -s ${DOTFILES}/doc/bashrc/.bashrc_go ] && source ${DOTFILES}/doc/bashrc/.bashrc_go
+[ -s ${DOTFILES}/doc/bashrc/bashrc_go ]     && source ${DOTFILES}/doc/bashrc/bashrc_go
 # nvm
-[ -s ${DOTFILES}/doc/bashrc/.bashrc_nvm ] && source ${DOTFILES}/doc/bashrc/.bashrc_nvm
+[ -s ${DOTFILES}/doc/bashrc/bashrc_nvm ]    && source ${DOTFILES}/doc/bashrc/bashrc_nvm
 # fzf
-[ -s ${DOTFILES}/doc/bashrc/.bashrc_fzf ] && source ${DOTFILES}/doc/bashrc/.bashrc_fzf
+[ -s ${DOTFILES}/doc/bashrc/bashrc_fzf ]    && source ${DOTFILES}/doc/bashrc/bashrc_fzf
 # vivid
-[ -s ${DOTFILES}/doc/bashrc/.bashrc_vivid ] && source ${DOTFILES}/doc/bashrc/.bashrc_vivid
+[ -s ${DOTFILES}/doc/bashrc/bashrc_vivid ]  && source ${DOTFILES}/doc/bashrc/bashrc_vivid
 
 #--------------------------------------
 # Aliases
