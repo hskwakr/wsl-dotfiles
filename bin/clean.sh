@@ -13,7 +13,8 @@ if [ -d "${DOT_DIR}" ]; then
     [ "$f" "=" ".gitignore" ] && continue
     [ "$f" "=" ".gitattributes" ] && continue
 
-    sudo rm -rvf "${HOME:?}/${f}"
+    sudo rm -rf "${HOME:?}/${f}"
+    echo "Removed ${f}"
   done
   sudo rm -rf "${DOT_DIR:?}"
 else
