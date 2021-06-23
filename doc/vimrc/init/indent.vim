@@ -7,9 +7,6 @@ if did_filetype()
 endif
 
 " -------------------------------------
-" setfiletype
-
-" -------------------------------------
 " indent
 autocmd FileType vim  setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 autocmd FileType sh   setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab

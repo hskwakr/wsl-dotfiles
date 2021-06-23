@@ -43,14 +43,9 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" For snipmate
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-
 " For snippets
+Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
-
 
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
