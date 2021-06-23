@@ -10,9 +10,6 @@ export DOTFILES="${HOME}/wsl-dotfiles"
 # Editor for general usage
 export EDITOR=vim
 
-# Pager for manual
-export MANPAGER="sh -c 'col -bx | bat -l man -p --pager=\"less -FR\"'"
-
 #--------------------------------------
 # Import configurations
 bashrc_dir="${DOTFILES}/doc/bashrc"
@@ -23,6 +20,8 @@ bashrc_dir="${DOTFILES}/doc/bashrc"
 [ -s ${bashrc_dir}/bashrc_go ]      && source ${bashrc_dir}/bashrc_go
 # nvm
 [ -s ${bashrc_dir}/bashrc_nvm ]     && source ${bashrc_dir}/bashrc_nvm
+# bat
+[ -s ${bashrc_dir}/bashrc_bat ]     && source ${bashrc_dir}/bashrc_bat
 # fzf
 [ -s ${bashrc_dir}/bashrc_fzf ]     && source ${bashrc_dir}/bashrc_fzf
 # vivid

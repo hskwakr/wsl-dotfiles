@@ -1,0 +1,8 @@
+#!/bin/bash
+#--------------------------------------
+# CUSTOM .BASHRC SETTINGS
+# For bat
+#--------------------------------------
+
+# Pager for manual
+export MANPAGER="sh -c 'col -bx | bat -l man -p --pager=\"less -FR\"'"
