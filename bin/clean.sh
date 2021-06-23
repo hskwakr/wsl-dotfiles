@@ -1,7 +1,9 @@
 #!/bin/sh
-
 # Remove dotfiles and this repository
+
 DOT_DIR="${HOME}/wsl-dotfiles"
+CACHE_DIR="${DOT_DIR}/.cache/default"
+
 if [ -d "${DOT_DIR}" ]; then
   sh "${DOT_DIR}/bin/run-clean-scripts.sh"
 
@@ -15,6 +17,12 @@ if [ -d "${DOT_DIR}" ]; then
 
     sudo rm -rf "${HOME:?}/${f}"
     echo "Removed ${f}"
+
+    if [ -d "${CACHE_DIR}" ]; then
+      if [ -f "${CACHE_DIR}/${f}" ]; then
+        mv "${CACHE_DIR}/${f}" "${HOME}/${f}"
+      fi
+    fi
   done
   sudo rm -rf "${DOT_DIR:?}"
 else

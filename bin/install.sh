@@ -1,6 +1,7 @@
 #!/bin/sh
 
 DOT_DIR="$HOME/wsl-dotfiles"
+CACHE_DIR="${DOT_DIR}/.cache/default"
 
 # At this time, cannot use ${DOT_DIR}/etc/lib/sh/has.sh
 has() {
@@ -33,6 +34,15 @@ if [ ! -d "${DOT_DIR}" ]; then
     [ "$f" "=" ".gitignore" ] && continue
     [ "$f" "=" ".gitattributes" ] && continue
     [ "$f" "=" ".cache" ] && continue
+
+    # backup any existing dotfiles before making symlink
+    if [ ! -d "${CACHE_DIR}" ]; then
+      mkdir -p "${CACHE_DIR}"
+    fi
+    if [ -f "${HOME}/${f}" ]; then
+      mv "${HOME}/${f}" "${CACHE_DIR}/${f}"
+    fi
+
     ln -snf "${DOT_DIR}/${f}" "${HOME}/${f}"
     echo "Installed ${f}"
   done
