@@ -10,7 +10,7 @@ if ! has "fzf"; then
   echo "Start installing fzf ..."
 
   sudo apt update
-  sudo apt install fzf
+  sudo apt -y install fzf
 else
   echo "fzf is already installed"
   exit 1

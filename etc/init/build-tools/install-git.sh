@@ -9,5 +9,5 @@ printf "\n\n"
 echo "Start installing git ..."
 if ! has "git"; then
   sudo apt update
-  sudo apt install git
+  sudo apt -y install git
 fi

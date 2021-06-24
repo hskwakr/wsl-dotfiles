@@ -10,7 +10,7 @@ if ! has "rg"; then
   echo "Start installing ripgrep ..."
 
   sudo apt update
-  sudo apt install ripgrep
+  sudo apt -y install ripgrep
 else
   echo "rg is already installed"
   exit 1

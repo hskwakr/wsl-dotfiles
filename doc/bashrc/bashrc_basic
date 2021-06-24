@@ -11,6 +11,8 @@ export DOTFILES="${HOME}/wsl-dotfiles"
 # Editor for general usage
 export EDITOR=vim
 
+# 
+
 #--------------------------------------
 # Load configurations
 bashrc_dir="${DOTFILES}/doc/bashrc/imports"

@@ -8,7 +8,7 @@ if has "tree"; then
   echo "Remove tree ..."
 
   sudo apt update
-  sudo apt remove tree
+  sudo apt -y remove tree
 else
   echo "tree is already removed"
   exit 1

@@ -9,7 +9,7 @@ if has "rg"; then
   echo "Remove ripgrep ..."
 
   sudo apt update
-  sudo apt remove ripgrep
+  sudo apt -y remove ripgrep
 else
   echo "rg is already removed"
   exit 1

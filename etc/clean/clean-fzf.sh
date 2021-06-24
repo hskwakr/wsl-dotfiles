@@ -9,7 +9,7 @@ if has "fzf"; then
   echo "Remove fzf ..."
 
   sudo apt update
-  sudo apt remove fzf
+  sudo apt -y remove fzf
 else
   echo "fzf is already removed"
   exit 1

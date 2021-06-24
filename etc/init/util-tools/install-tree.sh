@@ -9,7 +9,7 @@ if ! has "tree"; then
   echo "Start installing tree ..."
 
   sudo apt update
-  sudo apt install tree
+  sudo apt -y install tree
 else
   echo "tree is already installed"
   exit 1
