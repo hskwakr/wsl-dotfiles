@@ -20,7 +20,7 @@ if [ ! -d "${INSTALL_DIR}" ]; then
     # shellcheck disable=SC1091
     . ./nvm.sh
     # shellcheck disable=SC1091
-    source "${DOT_DIR}/doc/bashrc/imports/bashrc_nvm"
+    . "${DOT_DIR}/doc/bashrc/imports/bashrc_nvm"
   else
     echo "git required"
     exit 1
