@@ -5,6 +5,7 @@
 # Enviroment Variables
 
 # Location for dotfiles repo.
+# dotfiles repo should be in the HOME dir.
 export DOTFILES="${HOME}/wsl-dotfiles"
 
 # Editor for general usage
