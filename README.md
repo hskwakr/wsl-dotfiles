@@ -4,16 +4,19 @@
 Configurations for Ubuntu 20.04.2 LTS on WSL2.
 
 ### Install
+Download this repo and make symlinks for dotfiles.
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/main/bin/install.sh)"
 ```
 
 ### Init
+Run install scripts.
 ```sh
 cd ~ && ./wsl-dotfiles/bin/init.sh && . .bashrc
 ```
 
 ### Uninstall
+Remove symlinks and uninstall tools installed from init then remove dotfile repo on local. 
 ```sh
 cd ~ && ./wsl-dotfiles/bin/clean.sh
 ```
