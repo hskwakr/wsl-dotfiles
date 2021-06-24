@@ -17,8 +17,6 @@ if [ ! -d "${INSTALL_DIR}" ]; then
     git clone https://github.com/nvm-sh/nvm.git "${INSTALL_DIR}"
     cd "${INSTALL_DIR}" || exit 1
     git checkout v0.38.0
-    # shellcheck disable=SC1091
-    . ./nvm.sh
   else
     echo "git required"
     exit 1
