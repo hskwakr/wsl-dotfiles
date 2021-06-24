@@ -1,7 +1,7 @@
 # wsl-dotfiles
 [![CI](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml)
 
-Configurations for Ubuntu 20.04.2 LTS on WSL2.
+Configurations and automatic tool installation scripts for Ubuntu 20.04.2 LTS on WSL2.
 
 ### Install
 Download this repo and make symlinks for dotfiles.
