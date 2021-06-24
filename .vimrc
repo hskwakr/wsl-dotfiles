@@ -16,7 +16,7 @@ filetype plugin indent on
 syntax enable
 
 " -------------------------------------
-" Import setting files
+" Load setting files
 " -------------------------------------
 " Locations
 let s:vimrc_dir = g:dotfiles_dir . '/doc/vimrc'
