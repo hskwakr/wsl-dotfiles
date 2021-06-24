@@ -14,7 +14,7 @@ if ! has "node"; then
   echo "Start installing node ..."
   # shellcheck disable=SC1091
   . "${NVM_DIR}/nvm.sh"
-  nvm install "lts/*" --reinstall-packages-from=current
+  nvm install --lts
   npm install -g npm@latest
 else
   echo "... node is already installed"
