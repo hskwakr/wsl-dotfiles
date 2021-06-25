@@ -25,7 +25,7 @@ if [ ! -d "${DOWNLOAD_DIR}" ]; then
   mkdir -p "${DOWNLOAD_DIR}"
 fi
 
-if fc-list | grep 'Fira' > /dev/null; then
+if fc-list | grep 'Fira' >/dev/null; then
   echo "nerd-fonts is already installed"
   exit 1
 fi
