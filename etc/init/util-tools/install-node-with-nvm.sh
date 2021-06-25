@@ -7,7 +7,7 @@ DOT_DIR="$HOME/wsl-dotfiles"
 
 if ! has "node"; then
   if ! has "nvm"; then
-    sh "${DOT_DIR}/etc/init/install-nvm.sh"
+    sh "${DOT_DIR}/etc/init/build-tools/install-nvm.sh"
   fi
 
   printf "\n\n"

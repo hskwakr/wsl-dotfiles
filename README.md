@@ -11,11 +11,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/mai
 
 ### Init
 Run install scripts.
-old
-```sh
-cd ~ && ./wsl-dotfiles/bin/init.sh && . .bashrc
-```
-new
 ```sh
 cd ~/wsl-dotfiles && . .bashrc && \
 ./etc/init/build-tools.sh && . .bashrc && \
