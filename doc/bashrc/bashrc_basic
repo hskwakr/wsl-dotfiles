@@ -11,8 +11,6 @@ export DOTFILES="${HOME}/wsl-dotfiles"
 # Editor for general usage
 export EDITOR=vim
 
-# 
-
 #--------------------------------------
 # Load configurations
 bashrc_dir="${DOTFILES}/doc/bashrc/etc"
@@ -34,3 +32,7 @@ alias gst="git status"
 
 #--------------------------------------
 # Init commands
+
+if type "starship" >/dev/null 2>&1 ; then
+  eval "$(starship init bash)"
+fi

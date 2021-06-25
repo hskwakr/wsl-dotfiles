@@ -46,5 +46,6 @@ dispatch() {
 #--------------------------------------
 # Enviroment Variables
 # PROMPT_COMMAND
-export PROMPT_COMMAND="dispatch"
-export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}' '${psColor4}\\\$ '"
+## Commented out to use starship 
+#export PROMPT_COMMAND="dispatch"
+#export PROMPT_COMMAND_PS1="__git_ps1 '${psColor1}WSL${psColor4}:${psColor2}\W${psColor3}' '${psColor4}\\\$ '"
