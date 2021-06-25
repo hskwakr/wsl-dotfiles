@@ -25,6 +25,11 @@ if [ ! -d "${DOWNLOAD_DIR}" ]; then
   mkdir -p "${DOWNLOAD_DIR}"
 fi
 
+if fc-list | grep 'Fira' > /dev/null; then
+  echo "nerd-fonts is already installed"
+  exit 1
+fi
+
 printf "\n\n"
 echo "Start installing bat ..."
 wget -O "${DOWNLOAD_ITEM}" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
