@@ -3,7 +3,7 @@
 
 Configurations and automatic tool installation scripts for Ubuntu 20.04 LTS on WSL2.
 
-## Usage
+# Usage
 ### Install
 Download this repo and make symlinks for dotfiles.
 ```sh
@@ -25,6 +25,6 @@ Remove symlinks and uninstall tools installed from init then remove dotfile repo
 cd ~ && ./wsl-dotfiles/bin/clean.sh
 ```
 
-## My idea
+# My idea
 ___How to deal with Git line ending issues between Windows and WSL?___  
 I decide not to touch files on Windows from WSL and vice versa. 
