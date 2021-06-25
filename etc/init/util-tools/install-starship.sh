@@ -16,4 +16,4 @@ fi
 
 printf "\n\n"
 echo "Start installing starship ..."
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --force
