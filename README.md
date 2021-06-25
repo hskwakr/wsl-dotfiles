@@ -11,8 +11,15 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/mai
 
 ### Init
 Run install scripts.
+old
 ```sh
 cd ~ && ./wsl-dotfiles/bin/init.sh && . .bashrc
+```
+new
+```sh
+./etc/init/build-tools.sh && . .bashrc \
+./etc/init/programming-runtime.sh && . .bashrc \
+./etc/init/util-tools.sh && . .bashrc
 ```
 
 ### Uninstall
