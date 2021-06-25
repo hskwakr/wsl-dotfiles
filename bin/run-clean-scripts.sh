@@ -4,11 +4,10 @@ SCRIPTS_DIR="$HOME/wsl-dotfiles/etc/clean"
 
 if [ -d "${SCRIPTS_DIR}" ]; then
   echo "Start runing clean scripts..."
-  cd "${SCRIPTS_DIR}" || exit 1
-  for f in *.sh; do
-    echo "Run ${f}..."
-    sh "${f}"
-  done
+
+  sh "${SCRIPTS_DIR}/util-tools.sh"
+  sh "${SCRIPTS_DIR}/programming-runtime.sh"
+  sh "${SCRIPTS_DIR}/build-tools.sh"
 else
   echo "${SCRIPTS_DIR} does not exist"
   exit 1
