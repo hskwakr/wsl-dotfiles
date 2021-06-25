@@ -5,4 +5,4 @@
 printf "\n\n"
 echo "Remove starship ..."
 # Locate and delete the starship binary
-rm "$(which starship)"
+rm -f "$(which starship)"
