@@ -17,8 +17,9 @@ cd ~ && ./wsl-dotfiles/bin/init.sh && . .bashrc
 ```
 new
 ```sh
-./etc/init/build-tools.sh && . .bashrc \
-./etc/init/programming-runtime.sh && . .bashrc \
+cd ~/wsl-dotfiles && . .bashrc &&
+./etc/init/build-tools.sh && . .bashrc && \
+./etc/init/programming-runtime.sh && . .bashrc && \
 ./etc/init/util-tools.sh && . .bashrc
 ```
 
