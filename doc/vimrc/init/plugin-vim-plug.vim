@@ -27,7 +27,6 @@ Plug 'vim-jp/vimdoc-ja'
 
 " For colorscheme
 Plug 'sainnhe/gruvbox-material'
-Plug 'itchyny/lightline.vim'
 
 " For language server protcol
 Plug 'prabirshrestha/vim-lsp'
