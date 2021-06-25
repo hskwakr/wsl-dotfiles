@@ -31,7 +31,7 @@ if fc-list | grep 'Fira' >/dev/null; then
 fi
 
 printf "\n\n"
-echo "Start installing bat ..."
+echo "Start installing nerd-fonts ..."
 wget -O "${DOWNLOAD_ITEM}" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
 unzip "${DOWNLOAD_ITEM}" -d "${INSTALL_DIR}"
 rm -rf "${DOWNLOAD_ITEM}"
