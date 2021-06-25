@@ -13,10 +13,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/mai
 ### Init
 Run automatic tool installation scripts for Ubuntu 20.04 LTS.
 ```sh
-cd ~/wsl-dotfiles && . .bashrc && \
-./etc/init/build-tools.sh && . .bashrc && \
-./etc/init/programming-runtime.sh && . .bashrc && \
-./etc/init/util-tools.sh && . .bashrc
+cd ~/wsl-dotfiles && . .bashrc && ./etc/init/build-tools.sh && . .bashrc && ./etc/init/programming-runtime.sh && . .bashrc && ./etc/init/util-tools.sh && . .bashrc
 ```
 
 ### Uninstall
