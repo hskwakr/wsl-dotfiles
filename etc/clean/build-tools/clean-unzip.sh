@@ -10,6 +10,5 @@ if has "unzip"; then
   sudo apt update
   sudo apt -y remove unzip
 else
-  echo "unzip is already removed"
-  exit 1
+  echo "unzip does not exist"
 fi

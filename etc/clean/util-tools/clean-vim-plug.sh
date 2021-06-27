@@ -9,5 +9,4 @@ if [ -d "${CLEAN_DIR}" ]; then
   rm -rf "${REMOVE_ITEM:?}"
 else
   echo "${CLEAN_DIR} does not exist"
-  exit 1
 fi

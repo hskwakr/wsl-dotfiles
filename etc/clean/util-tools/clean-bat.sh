@@ -10,5 +10,4 @@ if has "bat"; then
   sudo dpkg -r bat
 else
   echo "bat is already removed"
-  exit 1
 fi

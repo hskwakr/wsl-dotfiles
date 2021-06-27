@@ -12,5 +12,4 @@ if has "rg"; then
   sudo apt -y remove ripgrep
 else
   echo "rg is already removed"
-  exit 1
 fi

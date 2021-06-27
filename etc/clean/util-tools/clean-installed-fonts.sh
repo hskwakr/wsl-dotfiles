@@ -7,7 +7,7 @@ FONTS_DIR="$HOME/.fonts"
 
 if [ ! -d "${FONTS_DIR}" ]; then
   echo "${FONTS_DIR} does not exist"
-  exit 1
+  exit 0
 fi
 rm -rf "${FONTS_DIR:?}"
 

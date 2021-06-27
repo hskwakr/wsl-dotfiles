@@ -12,5 +12,4 @@ if has "starship"; then
   sudo rm -fv "$(which starship)"
 else
   echo "starship does not exist"
-  exit 1
 fi

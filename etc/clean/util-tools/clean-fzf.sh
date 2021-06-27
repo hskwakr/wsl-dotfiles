@@ -12,5 +12,4 @@ if has "fzf"; then
   sudo apt -y remove fzf
 else
   echo "fzf is already removed"
-  exit 1
 fi

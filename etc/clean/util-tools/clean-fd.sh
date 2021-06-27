@@ -10,5 +10,4 @@ if has "fd"; then
   sudo dpkg -r fd
 else
   echo "fd is already removed"
-  exit 1
 fi

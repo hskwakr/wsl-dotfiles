@@ -11,5 +11,4 @@ if has "fc-cache"; then
   sudo apt -y remove fontconfig
 else
   echo "fontconfig is already removed"
-  exit 1
 fi

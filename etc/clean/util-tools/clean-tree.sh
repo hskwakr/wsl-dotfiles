@@ -11,5 +11,4 @@ if has "tree"; then
   sudo apt -y remove tree
 else
   echo "tree is already removed"
-  exit 1
 fi

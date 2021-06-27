@@ -10,5 +10,4 @@ if has "vivid"; then
   sudo dpkg -r vivid
 else
   echo "vivid is already removed"
-  exit 1
 fi

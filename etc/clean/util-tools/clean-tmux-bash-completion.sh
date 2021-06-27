@@ -11,5 +11,4 @@ if [ -f "${INSTALL_ITEM}" ]; then
   rm -vf "${INSTALL_ITEM}"
 else
   echo "${INSTALL_ITEM} does not exist"
-  exit 1
 fi

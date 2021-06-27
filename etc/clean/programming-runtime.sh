@@ -13,5 +13,4 @@ if [ -d "${RUNTIME_DIR}" ]; then
   run_current_dir_scripts
 else
   echo "${RUNTIME_DIR} does not exist"
-  exit 1
 fi

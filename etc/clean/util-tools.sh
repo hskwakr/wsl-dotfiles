@@ -13,5 +13,4 @@ if [ -d "${UTIL_TOOL_DIR}" ]; then
   run_current_dir_scripts
 else
   echo "${UTIL_TOOL_DIR} does not exist"
-  exit 1
 fi
