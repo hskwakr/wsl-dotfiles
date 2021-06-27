@@ -50,6 +50,9 @@ Plug 'honza/vim-snippets'
 " For syntax highlighitning and indentation
 Plug 'sheerun/vim-polyglot'
 
+" For go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
