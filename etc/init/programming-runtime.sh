@@ -7,7 +7,7 @@ RUNTIME_DIR="${SCRIPTS_DIR}/programming-runtime"
 . "${DOT_DIR}/etc/lib/sh/run_current_dir_scripts.sh"
 
 if [ -d "${RUNTIME_DIR}" ]; then
-  print "\n\n"
+  printf "\n\n"
   echo "Start runing init scripts in programming-runtime..."
   cd "${RUNTIME_DIR}" || exit 1
   run_current_dir_scripts

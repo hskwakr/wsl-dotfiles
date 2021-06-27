@@ -7,7 +7,7 @@ BUILD_TOOL_DIR="${SCRIPTS_DIR}/build-tools"
 . "${DOT_DIR}/etc/lib/sh/run_current_dir_scripts.sh"
 
 if [ -d "${BUILD_TOOL_DIR}" ]; then
-  print "\n\n"
+  printf "\n\n"
   echo "Start runing init scripts in build-tools..."
   cd "${BUILD_TOOL_DIR}" || exit 1
   run_current_dir_scripts
