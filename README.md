@@ -1,7 +1,7 @@
 # wsl-dotfiles
 [![CI](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/hskwakr/wsl-dotfiles/actions/workflows/main.yml)
 
-Configurations and automatic tool installation scripts for Ubuntu 20.04 LTS on WSL2.
+Configurations and tool installation scripts for Ubuntu 20.04 LTS on WSL2.
 
 # Usage
 ### Install
@@ -11,9 +11,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/mai
 ```
 
 ### Init
-Run automatic tool installation scripts for Ubuntu 20.04 LTS.
+Run tool installation scripts for Ubuntu 20.04 LTS.
 ```sh
-cd ~/wsl-dotfiles && . .bashrc && ./etc/init/build-tools.sh && . .bashrc && ./etc/init/programming-runtime.sh && . .bashrc && ./etc/init/util-tools.sh && . .bashrc
+cd ~/wsl-dotfiles && . .bashrc && \
+./etc/init/build-tools.sh && . .bashrc && \
+./etc/init/programming-runtime.sh && . .bashrc && \
+./etc/init/util-tools.sh && . .bashrc
 ```
 
 ### Uninstall
