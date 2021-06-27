@@ -28,7 +28,7 @@ Plug 'vim-jp/vimdoc-ja'
 " For colorscheme
 Plug 'sainnhe/gruvbox-material'
 
-" For language server protcol
+" Fou language server protcol
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 
@@ -46,6 +46,9 @@ Plug 'junegunn/fzf.vim'
 " For snippets
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
+
+" For syntax highlighitning and indentation
+Plug 'sheerun/vim-polyglot'
 
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
