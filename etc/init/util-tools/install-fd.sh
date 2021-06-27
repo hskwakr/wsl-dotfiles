@@ -27,5 +27,4 @@ if ! has "fd"; then
   rm -rf "${INSTALL_ITEM}"
 else
   echo "fd is already installed"
-  exit 1
 fi

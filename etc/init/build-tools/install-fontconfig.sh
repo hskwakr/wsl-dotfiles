@@ -12,5 +12,4 @@ if ! has "fc-cache"; then
   sudo apt -y install fontconfig
 else
   echo "fontconfig is already installed"
-  exit 1
 fi

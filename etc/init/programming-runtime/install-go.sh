@@ -6,6 +6,10 @@ DOT_DIR="$HOME/wsl-dotfiles"
 DOWNLOAD_DIR="${DOT_DIR}/.cache"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
+if has "go"; then
+  echo "go is already installed"
+  exit 0
+fi
 if [ ! -d "${DOWNLOAD_DIR}" ]; then
   mkdir -p "${DOWNLOAD_DIR}"
 fi

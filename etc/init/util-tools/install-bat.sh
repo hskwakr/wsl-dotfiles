@@ -27,5 +27,4 @@ if ! has "bat"; then
   rm -rf "${INSTALL_ITEM}"
 else
   echo "bat is already installed"
-  exit 1
 fi

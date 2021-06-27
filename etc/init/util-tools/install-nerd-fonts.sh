@@ -27,7 +27,7 @@ fi
 
 if fc-list | grep 'Fira' >/dev/null; then
   echo "nerd-fonts is already installed"
-  exit 1
+  exit 0
 fi
 
 printf "\n\n"

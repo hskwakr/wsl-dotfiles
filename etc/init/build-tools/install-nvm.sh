@@ -23,5 +23,4 @@ if [ ! -d "${INSTALL_DIR}" ]; then
   fi
 else
   echo "${INSTALL_DIR} is already exists"
-  exit 1
 fi

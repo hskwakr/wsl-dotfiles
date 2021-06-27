@@ -27,5 +27,4 @@ if ! has "vivid"; then
   rm -rf "${INSTALL_ITEM}"
 else
   echo "vivid is already installed"
-  exit 1
 fi

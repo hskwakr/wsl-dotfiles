@@ -11,5 +11,4 @@ if has "go"; then
   GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 else
   echo "go required"
-  exit 1
 fi

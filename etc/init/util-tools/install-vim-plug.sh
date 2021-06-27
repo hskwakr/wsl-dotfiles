@@ -18,5 +18,4 @@ if has "curl"; then
   curl -fLo "${INSTALL_DIR}/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 else
   echo "curl required"
-  exit 1
 fi

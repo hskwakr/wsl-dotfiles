@@ -12,5 +12,4 @@ if ! has "git"; then
   sudo apt -y install git
 else
   echo "git is already installed"
-  exit 1
 fi

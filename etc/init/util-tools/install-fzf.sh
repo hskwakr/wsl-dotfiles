@@ -13,5 +13,4 @@ if ! has "fzf"; then
   sudo apt -y install fzf
 else
   echo "fzf is already installed"
-  exit 1
 fi

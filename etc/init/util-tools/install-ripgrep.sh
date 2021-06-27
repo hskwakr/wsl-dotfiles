@@ -13,5 +13,4 @@ if ! has "rg"; then
   sudo apt -y install ripgrep
 else
   echo "rg is already installed"
-  exit 1
 fi

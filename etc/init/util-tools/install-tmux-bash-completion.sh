@@ -9,8 +9,9 @@ INSTALL_ITEM="${INSTALL_DIR}/tmux"
 
 if [ -f "${INSTALL_ITEM}" ]; then
   echo "${INSTALL_ITEM} is already installed"
-  exit 1
+  exit 0
 fi
+
 if ! has "wget"; then
   echo "wget required"
   exit 1

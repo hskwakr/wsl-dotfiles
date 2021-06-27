@@ -12,5 +12,4 @@ if ! has "tree"; then
   sudo apt -y install tree
 else
   echo "tree is already installed"
-  exit 1
 fi

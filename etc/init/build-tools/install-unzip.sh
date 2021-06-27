@@ -12,5 +12,4 @@ if ! has "unzip"; then
   sudo apt -y install unzip
 else
   echo "unzip is already installed"
-  exit 1
 fi

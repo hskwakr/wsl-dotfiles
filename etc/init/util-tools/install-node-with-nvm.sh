@@ -18,5 +18,4 @@ if ! has "node"; then
   npm install -g npm@latest
 else
   echo "... node is already installed"
-  exit 1
 fi

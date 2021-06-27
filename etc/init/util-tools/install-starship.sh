@@ -5,6 +5,11 @@
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
+if has "starship"; then
+  echo "starship is already installed"
+  exit 0
+fi
+
 if ! has "curl"; then
   echo "curl required"
   exit 1
