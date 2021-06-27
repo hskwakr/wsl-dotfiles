@@ -30,6 +30,5 @@ execute 'source' . s:init_dir . '/indent.vim'
 
 " Specific settings for plugins 
 execute 'source' . s:plugins_dir . '/plugins-vimdoc-ja.vim'
-execute 'source' . s:plugins_dir . '/plugins-gruvbox-material.vim'
 execute 'source' . s:plugins_dir . '/plugins-lsp.vim'
 execute 'source' . s:plugins_dir . '/plugins-asyncomplete.vim'

@@ -26,7 +26,6 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : s:plugins_dir)
 Plug 'vim-jp/vimdoc-ja'
 
 " For colorscheme
-Plug 'sainnhe/gruvbox-material'
 
 " For language server protcol
 Plug 'prabirshrestha/vim-lsp'
