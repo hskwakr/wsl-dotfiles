@@ -5,9 +5,12 @@
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
-printf "\n\n"
-echo "Start installing git ..."
 if ! has "git"; then
+  printf "\n\n"
+  echo "Start installing git ..."
   sudo apt update
   sudo apt -y install git
+else
+  echo "git is already installed"
+  exit 1
 fi

@@ -3,7 +3,9 @@
 
 run_current_dir_scripts() {
   for f in *.sh; do
-    echo "Run ${f}..."
-    sh "${f}"
+    if [ -f ${f} ]; then
+      echo "Run ${f}..."
+      sh "${f}"
+    fi
   done
 }
