@@ -47,9 +47,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 
-" For syntax highlighitning and indentation
-Plug 'sheerun/vim-polyglot'
-
 " For go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
