@@ -5,10 +5,14 @@
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
-if has "go"; then
-  printf "\n\n"
-  echo "Start installing shfmt ..."
-  GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
+if !has "shfmt"; then
+  if has "go"; then
+    printf "\n\n"
+    echo "Start installing shfmt ..."
+    GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
+  else
+    echo "go required"
+  fi
 else
-  echo "go required"
+  echo "shfmt is already installed"
 fi
