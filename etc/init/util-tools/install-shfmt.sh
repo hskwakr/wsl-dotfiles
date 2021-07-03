@@ -5,7 +5,7 @@
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
-if !has "shfmt"; then
+if ! has "shfmt"; then
   if has "go"; then
     printf "\n\n"
     echo "Start installing shfmt ..."
