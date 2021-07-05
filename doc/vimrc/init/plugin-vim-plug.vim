@@ -49,6 +49,7 @@ Plug 'honza/vim-snippets'
 
 " For go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'sebdah/vim-delve'
 
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
