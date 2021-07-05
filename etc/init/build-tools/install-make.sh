@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install make 
+# Install make
 
 DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
