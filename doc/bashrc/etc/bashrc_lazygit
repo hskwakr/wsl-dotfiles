@@ -1,0 +1,7 @@
+#!/bin/bash
+#--------------------------------------
+# CUSTOM .BASHRC SETTINGS
+# For go
+#--------------------------------------
+# Alias
+alias lg="lazygit"
