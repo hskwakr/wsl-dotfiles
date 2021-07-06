@@ -4,7 +4,7 @@
 
 DOT_DIR="$HOME/wsl-dotfiles"
 DOWNLOAD_DIR="${DOT_DIR}/.cache/.fonts"
-DOWNLOAD_ITEM="${DOWNLOAD_DIR}/FiraCode.zip"
+DOWNLOAD_ITEM1="${DOWNLOAD_DIR}/FiraCode.zip"
 INSTALL_DIR="$HOME/.fonts"
 
 . "${DOT_DIR}/etc/lib/sh/has.sh"
@@ -32,8 +32,8 @@ fi
 
 printf "\n\n"
 echo "Start installing nerd-fonts ..."
-wget -O "${DOWNLOAD_ITEM}" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
-unzip "${DOWNLOAD_ITEM}" -d "${INSTALL_DIR}"
-rm -rf "${DOWNLOAD_ITEM}"
+wget -O "${DOWNLOAD_ITEM1}" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
+unzip "${DOWNLOAD_ITEM1}" -d "${INSTALL_DIR}"
+rm -rf "${DOWNLOAD_ITEM1}"
 
 fc-cache -fv
