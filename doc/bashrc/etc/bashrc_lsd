@@ -1,0 +1,7 @@
+#!/bin/bash
+#--------------------------------------
+# CUSTOM .BASHRC SETTINGS
+# For lsd
+#--------------------------------------
+# Alias
+alias ls="lsd"
