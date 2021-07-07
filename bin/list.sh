@@ -1,8 +1,9 @@
 #!/bin/sh
-# Show list of dotfiles
 
-if [ -d "${DOTFILES}" ]; then
-  cd "${DOTFILES}" || exit 1
+# Show list of dotfiles
+DOT_DIR="${HOME}/wsl-dotfiles"
+if [ -d "${DOT_DIR}" ]; then
+  cd "${DOT_DIR}" || exit 1
   echo "Show list of available dotfiles in dotfiles repository..."
   for f in .??*; do
     [ "$f" "=" ".git" ] && continue
