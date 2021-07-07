@@ -1,13 +1,12 @@
 #!/bin/sh
 # Remove dotfiles and this repository
 
-DOT_DIR="${HOME}/wsl-dotfiles"
-CACHE_DIR="${DOT_DIR}/.cache/default"
+CACHE_DIR="${DOTFILES}/.cache/default"
 
-if [ -d "${DOT_DIR}" ]; then
-  sh "${DOT_DIR}/bin/run-clean-scripts.sh"
+if [ -d "${DOTFILES}" ]; then
+  sh "${DOTFILES}/bin/run-clean-scripts.sh"
 
-  cd "${DOT_DIR}" || exit 1
+  cd "${DOTFILES}" || exit 1
   echo "Remove linked dot files from dotfiles repository..."
   for f in .??*; do
     [ "$f" "=" ".git" ] && continue
@@ -24,7 +23,7 @@ if [ -d "${DOT_DIR}" ]; then
       fi
     fi
   done
-  sudo rm -rf "${DOT_DIR:?}"
+  sudo rm -rf "${DOTFILES:?}"
 else
   echo "dotfiles does not exists"
   exit 1
