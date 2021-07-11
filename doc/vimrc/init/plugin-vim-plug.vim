@@ -3,8 +3,7 @@
 "   vim-plug settings
 " -------------------------------------
 " Locations
-let s:mnger_dir = g:dotfiles_dir . '/.cache/vim-plug'
-let s:plugins_dir = s:mnger_dir . '/plugged'
+let s:plugins_dir = g:dotfiles_dir . '/.cache/vim-cache/plugins'
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
