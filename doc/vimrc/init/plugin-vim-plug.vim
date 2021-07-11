@@ -47,7 +47,7 @@ Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 
 " For go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go' ", { 'do': ':GoUpdateBinaries' }
 Plug 'sebdah/vim-delve'
 
 " -------------------------------------
