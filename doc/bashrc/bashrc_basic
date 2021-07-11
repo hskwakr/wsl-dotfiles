@@ -11,6 +11,10 @@ export DOTFILES="${HOME}/wsl-dotfiles"
 # Editor for general usage
 export EDITOR=vim
 
+# PATH
+dotfiles_bin="${DOTFILES}/.cache/bin"
+[ -d ${dotfiles_bin} ] && export PATH="$PATH:${dotfiles_bin}"
+
 #--------------------------------------
 # Load configurations
 bashrc_dir="${DOTFILES}/doc/bashrc/etc"
