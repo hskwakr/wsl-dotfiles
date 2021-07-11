@@ -3,15 +3,22 @@
 # https://github.com/junegunn/fzf#using-git
 
 DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="${DOT_DIR}/.cache/.fzf"
+BIN_DIR="${DOT_DIR}/.cache/bin"
+DOWNLOAD_DIR="${DOT_DIR}/.cache/.fzf"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "fzf"; then
   printf "\n\n"
   echo "Start installing fzf ..."
 
-  git clone --depth 1 https://github.com/junegunn/fzf.git "${INSTALL_DIR}"
-  bash -c "${INSTALL_DIR}/install --bin --no-bash"
+  git clone --depth 1 https://github.com/junegunn/fzf.git "${DOWNLOAD_DIR}"
+  bash -c "${DOWNLOAD_DIR}/install --bin --no-bash"
+
+  if [ ! -d "${BIN_DIR}" ]; then
+    mkdir -p "${BIN_DIR}"
+  fi
+  ln -snf "${DOWNLOAD_DIR}/bin/fzf" "${BIN_DIR}/fzf"
+  ln -snf "${DOWNLOAD_DIR}/bin/fzf-tmux" "${BIN_DIR}/fzf-tmux"
 else
   echo "fzf is already installed"
 fi

@@ -5,12 +5,8 @@
 #--------------------------------------
 
 # locaiotns
-fzf_bin="${DOTFILES}/.cache/.fzf/bin"
 fzf_keybinds_path="${DOTFILES}/doc/fzf/key-bindings.bash"
 fzf_completion_path="${DOTFILES}/doc/fzf/completion"
-
-# set to $PATH
-[ -d ${fzf_bin} ] && export PATH="$PATH:${fzf_bin}"
 
 # key bindings
 [ -s ${fzf_keybinds_path} ] && source ${fzf_keybinds_path}
