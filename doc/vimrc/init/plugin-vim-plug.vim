@@ -50,6 +50,9 @@ Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go' ", { 'do': ':GoUpdateBinaries' }
 Plug 'sebdah/vim-delve'
 
+" For markdown
+Plug 'skanehira/preview-markdown.vim'
+
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
