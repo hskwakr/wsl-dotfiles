@@ -21,7 +21,7 @@ bashrc_dir="${DOTFILES}/doc/bashrc/etc"
 
 # Load all files from ${bashrc_dir} directory
 if [ -d "${bashrc_dir}" ]; then
-  for file in ${bashrc_dir}/*; do
+  for file in ${bashrc_dir}/bashrc_*; do
     source "${file}"
   done
 fi
