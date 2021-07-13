@@ -21,6 +21,9 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : s:plugins_dir)
 " Declare the list of plugins.
 " -------------------------------------
 
+" For help about vim-plug
+Plug 'junegunn/vim-plug'
+
 " For offial help in Japanese
 Plug 'vim-jp/vimdoc-ja'
 
