@@ -52,6 +52,7 @@ Plug 'sebdah/vim-delve'
 
 " For markdown
 Plug 'skanehira/preview-markdown.vim'
+Plug 'mattn/vim-maketable'
 
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
