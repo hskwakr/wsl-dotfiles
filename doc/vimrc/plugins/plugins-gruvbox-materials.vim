@@ -2,6 +2,10 @@
 " Settings for plugins
 "   sainnhe/gruvbox-material
 " -------------------------------------
+if empty(globpath(&rtp, 'color/gruvbox-material'))
+  finish
+endif
+
 "  For tmux
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
