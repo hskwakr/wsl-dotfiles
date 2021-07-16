@@ -57,6 +57,9 @@ Plug 'sebdah/vim-delve'
 Plug 'skanehira/preview-markdown.vim'
 Plug 'mattn/vim-maketable'
 
+" For lint
+Plug 'dense-analysis/ale'
+
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
