@@ -13,7 +13,9 @@ export EDITOR=vim
 
 # PATH
 dotfiles_bin="${DOTFILES}/.cache/bin"
-[ -d ${dotfiles_bin} ] && export PATH="$PATH:${dotfiles_bin}"
+local_bin="${HOME}/.local/bin"
+[ -d "${dotfiles_bin}" ] && export PATH="$PATH:${dotfiles_bin}"
+[ -d "${local_bin}" ] && export PATH="$PATH:${local_bin}"
 
 #--------------------------------------
 # Load configurations
