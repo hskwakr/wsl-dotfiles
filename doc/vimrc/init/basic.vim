@@ -13,7 +13,7 @@ if has('persistent_undo')
   if !isdirectory(s:undo_path)
     call mkdir(s:undo_path, 'p')
   endif
-  exe 'set undodir=' .. s:undo_path
+  exe 'set undodir=' . s:undo_path
   set undofile
 endif
 
@@ -22,7 +22,7 @@ let s:backup_path = g:dotfiles_dir . '/.cache/vim-cache/backup'
 if !isdirectory(s:backup_path)
   call mkdir(s:backup_path, 'p')
 endif
-exe 'set backupdir=' .. s:backup_path
+exe 'set backupdir=' . s:backup_path
 set backup
 
 " Indentation
