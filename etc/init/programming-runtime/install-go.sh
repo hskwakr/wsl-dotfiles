@@ -3,7 +3,7 @@
 # https://golang.org/doc/install
 
 DOT_DIR="$HOME/wsl-dotfiles"
-DOWNLOAD_DIR="${DOT_DIR}/.cache"
+DOWNLOAD_DIR="${HOME}/.cache/mybuild"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "go"; then

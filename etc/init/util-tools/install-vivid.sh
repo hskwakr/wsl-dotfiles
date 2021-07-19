@@ -3,7 +3,7 @@
 # https://github.com/sharkdp/vivid#on-debian-based-systems
 
 DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="${DOT_DIR}/.cache"
+INSTALL_DIR="${HOME}/.cache/mybuild"
 INSTALL_ITEM="${INSTALL_DIR}/vivid.deb"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 

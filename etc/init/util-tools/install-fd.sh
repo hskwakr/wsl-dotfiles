@@ -3,7 +3,7 @@
 # https://github.com/sharkdp/fd#on-ubuntu
 
 DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="${DOT_DIR}/.cache"
+INSTALL_DIR="${HOME}/.cache/mybuild"
 INSTALL_ITEM="${INSTALL_DIR}/fd.deb"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 

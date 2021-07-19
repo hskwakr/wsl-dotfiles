@@ -3,7 +3,7 @@
 # https://github.com/sharkdp/bat#on-ubuntu-using-most-recent-deb-packages
 
 DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="${DOT_DIR}/.cache"
+INSTALL_DIR="${HOME}/.cache/mybuild"
 INSTALL_ITEM="${INSTALL_DIR}/bat.deb"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
