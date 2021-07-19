@@ -10,6 +10,7 @@ endif
 
 " Locations
 let g:dotfiles_dir = expand('~/wsl-dotfiles')
+let g:dotfiles_cache_dir = expand('~/.cache/dotfiles')
 
 " General settings
 filetype plugin indent on

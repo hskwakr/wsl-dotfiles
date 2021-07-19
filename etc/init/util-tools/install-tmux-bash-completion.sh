@@ -2,7 +2,7 @@
 # Install tmux-bash-completion
 
 DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="${DOT_DIR}/.cache/bash/completion"
+INSTALL_DIR="${HOME}/.cache/dotfiles/bash/completion"
 INSTALL_ITEM="${INSTALL_DIR}/tmux"
 
 . "${DOT_DIR}/etc/lib/sh/has.sh"

@@ -4,7 +4,7 @@
 "   mattn/vim-lsp-settings
 " -------------------------------------
 " Directory to install servers
-let s:lsp_settings_dir = g:dotfiles_dir . '/.cache/vim-cache/lsp-settings'
+let s:lsp_settings_dir = g:dotfiles_cache_dir . '/vim-cache/lsp-settings'
 if !isdirectory(s:lsp_settings_dir)
   call mkdir(s:lsp_settings_dir, 'p')
 endif

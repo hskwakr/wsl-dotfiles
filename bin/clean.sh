@@ -2,7 +2,7 @@
 # Remove dotfiles and this repository
 
 DOT_DIR="${HOME}/wsl-dotfiles"
-CACHE_DIR="${DOT_DIR}/.cache/default"
+CACHE_DIR="${HOME}/.cache/dotfiles/default"
 
 if [ -d "${DOT_DIR}" ]; then
   sh "${DOT_DIR}/bin/run-clean-scripts.sh"

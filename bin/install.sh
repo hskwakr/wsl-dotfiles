@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DOT_DIR="$HOME/wsl-dotfiles"
-CACHE_DIR="${DOT_DIR}/.cache/default"
+DOT_DIR="${HOME}/wsl-dotfiles"
+CACHE_DIR="${HOME}/.cache/dotfiles/default"
 
 # At this time, cannot use ${DOT_DIR}/etc/lib/sh/has.sh
 has() {

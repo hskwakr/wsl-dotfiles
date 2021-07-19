@@ -4,11 +4,11 @@
 # For completion
 #--------------------------------------
 # Locations
-bashrc_cache_dir="${DOTFILES}/.cache/bash/completion"
+bashrc_cache_dir="${HOME}/.cache/dotfiles/bash/completion"
 
 # Load all files from ${bashrc_cache_dir} directory
 if [ -d "${bashrc_cache_dir}" ]; then
-  for file in ${bashrc_cache_dir}/*; do
+  for file in "${bashrc_cache_dir}"/*; do
     source "${file}"
   done
 fi

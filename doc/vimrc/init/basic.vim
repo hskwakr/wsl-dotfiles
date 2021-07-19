@@ -9,7 +9,7 @@ set number
 
 " Persistent undo
 if has('persistent_undo')
-  let s:undo_path = g:dotfiles_dir . '/.cache/vim-cache/undo'
+  let s:undo_path = g:dotfiles_cache_dir . '/vim-cache/undo'
   if !isdirectory(s:undo_path)
     call mkdir(s:undo_path, 'p')
   endif
@@ -18,7 +18,7 @@ if has('persistent_undo')
 endif
 
 " Backup
-let s:backup_path = g:dotfiles_dir . '/.cache/vim-cache/backup'
+let s:backup_path = g:dotfiles_cache_dir . '/vim-cache/backup'
 if !isdirectory(s:backup_path)
   call mkdir(s:backup_path, 'p')
 endif
