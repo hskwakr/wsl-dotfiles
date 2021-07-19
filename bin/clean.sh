@@ -28,8 +28,6 @@ if [ -d "${DOT_DIR}" ]; then
 
   # Remove dotfiles dir
   sudo rm -rf "${DOT_DIR:?}"
-  # Remove cache dir for dotfiles
-  sudo rm -rf "${CACHE_DIR:?}"
 else
   echo "dotfiles does not exists"
   exit 1
