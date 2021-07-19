@@ -33,7 +33,6 @@ if [ ! -d "${DOT_DIR}" ]; then
     [ "$f" "=" ".github" ] && continue
     [ "$f" "=" ".gitignore" ] && continue
     [ "$f" "=" ".gitattributes" ] && continue
-    [ "$f" "=" ".cache" ] && continue
 
     # backup any existing dotfiles before making symlink
     if [ ! -d "${CACHE_DIR}" ]; then

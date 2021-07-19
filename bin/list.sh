@@ -10,7 +10,6 @@ if [ -d "${DOT_DIR}" ]; then
     [ "$f" "=" ".github" ] && continue
     [ "$f" "=" ".gitignore" ] && continue
     [ "$f" "=" ".gitattributes" ] && continue
-    [ "$f" "=" ".cache" ] && continue
 
     echo "${HOME}/$f"
   done
