@@ -12,9 +12,11 @@ export DOTFILES="${HOME}/wsl-dotfiles"
 export EDITOR=vim
 
 # PATH
-dotfiles_bin="${DOTFILES}/.cache/bin"
+# For mybuild
+mybuild_bin="${HOME}/.cache/mybuild/bin"
+[ -d "${mybuild_bin}" ] && export PATH="$PATH:${mybuild_bin}"
+# For pip
 local_bin="${HOME}/.local/bin"
-[ -d "${dotfiles_bin}" ] && export PATH="$PATH:${dotfiles_bin}"
 [ -d "${local_bin}" ] && export PATH="$PATH:${local_bin}"
 
 #--------------------------------------
@@ -23,7 +25,7 @@ bashrc_dir="${DOTFILES}/doc/bashrc/etc"
 
 # Load all files from ${bashrc_dir} directory
 if [ -d "${bashrc_dir}" ]; then
-  for file in ${bashrc_dir}/bashrc_*; do
+  for file in "${bashrc_dir}"/bashrc_*; do
     source "${file}"
   done
 fi

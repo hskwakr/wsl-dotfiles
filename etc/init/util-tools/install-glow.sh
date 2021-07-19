@@ -2,9 +2,9 @@
 # Install glow with a way following below site.
 # https://github.com/charmbracelet/glow#installation
 
-DOT_DIR="$HOME/wsl-dotfiles"
-BIN_DIR="${DOT_DIR}/.cache/bin"
-DOWNLOAD_DIR="${DOT_DIR}/.cache/.glow"
+DOT_DIR="${HOME}/wsl-dotfiles"
+BIN_DIR="${HOME}/.cache/mybuild/bin"
+DOWNLOAD_DIR="${HOME}/.cache/mybuild/.glow"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "glow"; then

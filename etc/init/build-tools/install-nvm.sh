@@ -2,8 +2,8 @@
 # Install nvm with a way following below site.
 # https://github.com/nvm-sh/nvm#git-install
 
-DOT_DIR="$HOME/wsl-dotfiles"
-INSTALL_DIR="$DOT_DIR/.cache/.nvm"
+DOT_DIR="${HOME}/wsl-dotfiles"
+INSTALL_DIR="${HOME}/.cache/mybuild/.nvm"
 
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 

@@ -4,7 +4,7 @@
 # For nvm
 #--------------------------------------
 # Enviroment variables
-export NVM_DIR="${DOTFILES}/.cache/.nvm"
+export NVM_DIR="${HOME}/.cache/mybuild/.nvm"
 
 #--------------------------------------
 # Import configurations

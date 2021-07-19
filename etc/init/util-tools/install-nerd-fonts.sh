@@ -2,10 +2,10 @@
 # Install nerd-fonts with a way following below site.
 # https://github.com/ryanoasis/nerd-fonts#font-installation
 
-DOT_DIR="$HOME/wsl-dotfiles"
-DOWNLOAD_DIR="${DOT_DIR}/.cache/.fonts"
+DOT_DIR="${HOME}/wsl-dotfiles"
+DOWNLOAD_DIR="${HOME}/.cache/mybuild/.fonts"
 DOWNLOAD_ITEM1="${DOWNLOAD_DIR}/FiraCode.zip"
-INSTALL_DIR="$HOME/.fonts"
+INSTALL_DIR="${HOME}/.fonts"
 
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
@@ -34,6 +34,6 @@ printf "\n\n"
 echo "Start installing nerd-fonts ..."
 wget -O "${DOWNLOAD_ITEM1}" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
 unzip "${DOWNLOAD_ITEM1}" -d "${INSTALL_DIR}"
-rm -rf "${DOWNLOAD_ITEM1}"
+rm -rf "${DOWNLOAD_DIR}"
 
 fc-cache -fv

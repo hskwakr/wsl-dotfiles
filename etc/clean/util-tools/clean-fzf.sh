@@ -2,8 +2,8 @@
 # Remove fzf
 # https://github.com/junegunn/fzf#using-linux-package-managers
 
-DOT_DIR="$HOME/wsl-dotfiles"
-INSTALLED_DIR="${DOT_DIR}/.cache/.fzf"
+DOT_DIR="${HOME}/wsl-dotfiles"
+INSTALLED_DIR="${HOME}/.cache/mybuild/.fzf"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "fzf"; then

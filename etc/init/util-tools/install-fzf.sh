@@ -2,9 +2,9 @@
 # Install fzf with a way following below site.
 # https://github.com/junegunn/fzf#using-git
 
-DOT_DIR="$HOME/wsl-dotfiles"
-BIN_DIR="${DOT_DIR}/.cache/bin"
-DOWNLOAD_DIR="${DOT_DIR}/.cache/.fzf"
+DOT_DIR="${HOME}/wsl-dotfiles"
+BIN_DIR="${HOME}/.cache/mybuild/bin"
+DOWNLOAD_DIR="${HOME}/.cache/mybuild/.fzf"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "fzf"; then

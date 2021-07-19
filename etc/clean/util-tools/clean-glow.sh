@@ -1,8 +1,8 @@
 #!/bin/sh
 # Remove glow
 
-DOT_DIR="$HOME/wsl-dotfiles"
-INSTALLED_DIR="${DOT_DIR}/.cache/.glow"
+DOT_DIR="${HOME}/wsl-dotfiles"
+INSTALLED_DIR="${HOME}/.cache/mybuild/.glow"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "glow"; then
