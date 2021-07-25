@@ -45,8 +45,3 @@ alias gst="git status"
 if type "starship" >/dev/null 2>&1 ; then
   eval "$(starship init bash)"
 fi
-
-# navi
-if type "navi" >/dev/null 2>&1 ; then
-  eval "$(navi widget bash)"
-fi
