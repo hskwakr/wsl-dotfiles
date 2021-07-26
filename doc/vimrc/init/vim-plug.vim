@@ -33,9 +33,6 @@ Plug 'vim-jp/vimdoc-ja'
 " For colorscheme
 Plug 'sainnhe/gruvbox-material'
 
-" For start screen
-Plug 'mhinz/vim-startify'
-
 " Fou language server protcol
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
@@ -57,6 +54,9 @@ Plug 'honza/vim-snippets'
 
 " For lint
 Plug 'dense-analysis/ale'
+
+" For cheatsheet
+Plug 'reireias/vim-cheatsheet'
 
 " For go
 Plug 'fatih/vim-go' ", { 'do': ':GoUpdateBinaries' }
