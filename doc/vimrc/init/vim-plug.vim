@@ -59,7 +59,6 @@ Plug 'dense-analysis/ale'
 Plug 'reireias/vim-cheatsheet'
 
 " For go
-Plug 'fatih/vim-go' ", { 'do': ':GoUpdateBinaries' }
 Plug 'sebdah/vim-delve'
 
 " For markdown
