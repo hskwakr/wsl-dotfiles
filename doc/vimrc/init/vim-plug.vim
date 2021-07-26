@@ -33,6 +33,9 @@ Plug 'vim-jp/vimdoc-ja'
 " For colorscheme
 Plug 'sainnhe/gruvbox-material'
 
+" For start screen
+Plug 'mhinz/vim-startify'
+
 " Fou language server protcol
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
@@ -52,6 +55,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 
+" For lint
+Plug 'dense-analysis/ale'
+
 " For go
 Plug 'fatih/vim-go' ", { 'do': ':GoUpdateBinaries' }
 Plug 'sebdah/vim-delve'
@@ -59,9 +65,6 @@ Plug 'sebdah/vim-delve'
 " For markdown
 Plug 'skanehira/preview-markdown.vim'
 Plug 'mattn/vim-maketable'
-
-" For lint
-Plug 'dense-analysis/ale'
 
 " -------------------------------------
 " List ends here. Plugins become visible to Vim after this call.
