@@ -8,15 +8,15 @@ _NORMAL MODE_
 - gs    (:h LspHover)
 - <f2>  (:h LspRename)
 
+'junegunn/fzf.vim'
+- <c-f>f (:h :Files)
+- <c-f>b (:h :Buffers)
+
 _INSERT MODE_
 'sirver/ultisnips'
 - <c-e> (:h g:UltiSnipsExpandTrigger)
 
 ### Commands
-'junegunn/fzf.vim'
-- :Files
-- :Buffers
-
 'dense-analysis/ale'
 - :ALEInfo
 
