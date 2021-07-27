@@ -49,8 +49,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " For snippets
-Plug 'sirver/ultisnips'
-Plug 'honza/vim-snippets'
+if has('python3')
+  Plug 'sirver/ultisnips'
+  Plug 'honza/vim-snippets'
+endif
 
 " For lint
 Plug 'dense-analysis/ale'
