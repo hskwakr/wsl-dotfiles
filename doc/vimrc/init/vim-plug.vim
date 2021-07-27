@@ -52,6 +52,7 @@ Plug 'junegunn/fzf.vim'
 if has('python3')
   Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
+  Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 endif
 
 " For lint
