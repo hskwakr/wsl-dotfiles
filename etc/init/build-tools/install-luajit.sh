@@ -9,4 +9,4 @@ echo "Start installing lua ..."
 sudo apt update
 sudo apt -y install lua5.2
 sudo apt -y install liblua5.2-dev
-sudo apt -y install luajit 
+sudo apt -y install luajit

@@ -9,4 +9,4 @@ echo "Remove lua ..."
 sudo apt update
 sudo apt -y remove lua5.2
 sudo apt -y remove liblua5.2-dev
-sudo apt -y remove luajit 
+sudo apt -y remove luajit
