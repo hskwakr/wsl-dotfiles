@@ -19,7 +19,9 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " - Popup window (center of the screen)
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+if has('popupwin')
+  let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+endif
 
 nnoremap <c-f> <nor>
 nnoremap <c-f>f :Files<CR>
