@@ -14,10 +14,10 @@ export EDITOR=vim
 # PATH
 # For mybuild
 mybuild_bin="${HOME}/.cache/mybuild/bin"
-[ -d "${mybuild_bin}" ] && export PATH="$PATH:${mybuild_bin}"
+[ -d "${mybuild_bin}" ] && export PATH="${mybuild_bin}:$PATH"
 # For pip
 local_bin="${HOME}/.local/bin"
-[ -d "${local_bin}" ] && export PATH="$PATH:${local_bin}"
+[ -d "${local_bin}" ] && export PATH="${local_bin}:$PATH"
 
 #--------------------------------------
 # Load configurations
