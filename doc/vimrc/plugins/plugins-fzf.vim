@@ -18,6 +18,9 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" - Popup window (center of the screen)
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+
 nnoremap <c-f> <nor>
 nnoremap <c-f>f :Files<CR>
 nnoremap <c-f>b :Buffers<CR>
