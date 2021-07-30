@@ -1,11 +1,8 @@
 #!/bin/sh
 # Remove lua
 
-DOT_DIR="$HOME/wsl-dotfiles"
-. "${DOT_DIR}/etc/lib/sh/has.sh"
-
 echo "Remove lua ..."
 
-#sudo apt update
-#sudo apt -y remove liblua5.1-dev
-#sudo apt -y remove luajit
+sudo apt update
+sudo apt -y remove luajit
+sudo apt -y remove libluajit-5.1-dev
