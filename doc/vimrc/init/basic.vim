@@ -36,3 +36,6 @@ set laststatus=2
 
 " Show Command-Line completion on statusline
 set wildmenu
+
+" backspace
+set backspace=indent,eol,start
