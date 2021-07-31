@@ -15,7 +15,7 @@ if [ -d "${DOT_DIR}" ]; then
     [ "$f" "=" ".gitattributes" ] && continue
 
     sudo rm -rf "${HOME:?}/${f}"
-    echo "Removed ${f}"
+    echo "... Removed ${f}"
 
     if [ -d "${DEFAULT_DIR}" ]; then
       if [ -f "${DEFAULT_DIR}/${f}" ]; then
@@ -24,8 +24,12 @@ if [ -d "${DOT_DIR}" ]; then
     fi
   done
 
+  # Remove cache dir for dotfiles
+  sudo rm -rf "${CACHE_DIR:?}"
+  echo "... Removed ${CACHE_DIR}"
   # Remove dotfiles dir
   sudo rm -rf "${DOT_DIR:?}"
+  echo "... Removed ${DOT_DIR}"
 else
   echo "dotfiles does not exists"
   exit 1
