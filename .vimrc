@@ -1,9 +1,6 @@
 " -------------------------------------
 " Common settings
 " -------------------------------------
-" Defaults sttings for beginner user
-" source $VIMRUNTIME/defaults.vim
-
 if &compatible
   set nocompatible " Be iMproved
 endif
