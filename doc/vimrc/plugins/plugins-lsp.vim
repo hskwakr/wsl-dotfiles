@@ -3,6 +3,9 @@
 "   prabirshrestha/vim-lsp
 "   mattn/vim-lsp-settings
 " -------------------------------------
+UsePlugin 'vim-lsp'
+UsePlugin 'vim-lsp-settings'
+
 " Directory to install servers
 let s:lsp_settings_dir = g:dotfiles_cache_dir . '/vim-cache/lsp-settings'
 if !isdirectory(s:lsp_settings_dir)

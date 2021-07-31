@@ -2,6 +2,7 @@
 " Settings for plugins
 "   prabirshrestha/asyncomplete.vim
 " -------------------------------------
+UsePlugin 'asyncomplete.vim'
 
 " Tab completion 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
