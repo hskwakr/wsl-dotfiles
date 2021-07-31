@@ -20,9 +20,15 @@ cd ~/wsl-dotfiles && . .bashrc && \
 ```
 
 ### Uninstall
+Remove symlinks
+```sh
+cd ~ && ./wsl-dotfiles/bin/clean.sh && . .bashrc
+```
+
 Remove symlinks and uninstall tools installed from init then remove dotfile repo on local. 
 ```sh
-cd ~ && ./wsl-dotfiles/bin/clean.sh
+cd ~ && ./wsl-dotfiles/bin/run-clean-scripts.sh && \
+./wsl-dotfiles/bin/clean.sh && . .bashrc
 ```
 
 # My idea

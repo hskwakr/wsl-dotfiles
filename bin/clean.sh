@@ -6,8 +6,6 @@ CACHE_DIR="${HOME}/.cache/dotfiles"
 DEFAULT_DIR="${CACHE_DIR}/default"
 
 if [ -d "${DOT_DIR}" ]; then
-  sh "${DOT_DIR}/bin/run-clean-scripts.sh"
-
   cd "${DOT_DIR}" || exit 1
   echo "Remove linked dot files from dotfiles repository..."
   for f in .??*; do
