@@ -26,8 +26,16 @@ let s:plugins_dir = s:vimrc_dir . '/plugins'
 
 " Specific settings for init 
 execute 'source' . s:init_dir . '/basic.vim'
-execute 'source' . s:init_dir . '/vim-plug.vim'
 execute 'source' . s:init_dir . '/indent.vim'
+execute 'source' . s:init_dir . '/vim-plug.vim'
+
+" g:plugs is a global variable by vim-plug
+let s:plugs = get(s:, 'plugs', get(g:, 'plugs', {}))
+function! FindPlugin(name) abort
+  return has_key(s:plugs, a:name) ? isdirectory(s:plugs[a:name].dir) : 0
+endfunction
+" UsePlugin does not load settings when the plugin is not installed
+command! -nargs=1 UsePlugin if !FindPlugin(<args>) | finish | endif
 
 " Specific settings for plugins 
 call map(split(globpath(s:plugins_dir, '*.vim')), {->[execute('exec "so" v:val')]})

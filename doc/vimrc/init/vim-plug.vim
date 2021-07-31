@@ -6,9 +6,9 @@
 let s:plugins_dir = g:dotfiles_cache_dir . '/vim-cache/plugins'
 
 " Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  execute '!sh ' . g:dotfiles_dir . '/etc/init/install-vim-plug.sh'
-endif
+"if empty(glob('~/.vim/autoload/plug.vim'))
+"  execute '!sh ' . g:dotfiles_dir . '/etc/init/install-vim-plug.sh'
+"endif
 
 " Run PlugInstall if there are missing plugins
 augroup vimrc_vim_plug

@@ -3,6 +3,8 @@
 "   sirver/ultisnips
 "   prabirshrestha/asyncomplete-ultisnips
 " -------------------------------------
+UsePlugin 'ultisnips'
+UsePlugin 'asyncomplete-ultisnips'
 
 " Location
 let s:snippets_dir = g:dotfiles_dir . '/doc/vimrc/etc/snippets'

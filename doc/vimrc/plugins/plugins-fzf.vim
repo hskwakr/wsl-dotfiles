@@ -2,6 +2,7 @@
 " Settings for plugins
 "   junegunn/fzf.vim
 " -------------------------------------
+UsePlugin 'fzf.vim'
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =

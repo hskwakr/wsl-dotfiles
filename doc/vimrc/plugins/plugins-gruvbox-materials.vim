@@ -2,6 +2,8 @@
 " Settings for plugins
 "   sainnhe/gruvbox-material
 " -------------------------------------
+UsePlugin 'gruvbox-material'
+
 if empty(globpath(&runtimepath, 'colors/gruvbox-material.vim'))
   finish
 endif
