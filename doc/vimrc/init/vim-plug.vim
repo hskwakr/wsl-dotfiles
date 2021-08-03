@@ -62,7 +62,6 @@ Plug 'dense-analysis/ale'
 Plug 'reireias/vim-cheatsheet'
 
 " For go
-Plug 'mattn/vim-goimports'
 Plug 'sebdah/vim-delve'
 
 " For markdown
