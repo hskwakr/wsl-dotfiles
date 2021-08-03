@@ -4,7 +4,7 @@
 "   prabirshrestha/asyncomplete-ultisnips
 " -------------------------------------
 UsePlugin 'ultisnips'
-UsePlugin 'asyncomplete-ultisnips'
+UsePlugin 'asyncomplete-ultisnips.vim'
 
 " Location
 let s:snippets_dir = g:dotfiles_dir . '/doc/vimrc/etc/snippets'
