@@ -9,8 +9,10 @@ _NORMAL MODE_
 - <f2>  (:h LspRename)
 
 'junegunn/fzf.vim'
-- <c-f>f (:h :Files)
-- <c-f>b (:h :Buffers)
+- <leader>ff (:h :Files)
+- <leader>fb (:h :Buffers)
+- <leader>fs (:h :Snippets)
+- <leader>fh (:h :Helptags)
 
 _INSERT MODE_
 'sirver/ultisnips'

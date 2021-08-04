@@ -24,6 +24,7 @@ if has('popupwin')
   let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 endif
 
-nnoremap <c-f> <nor>
-nnoremap <c-f>f :Files<CR>
-nnoremap <c-f>b :Buffers<CR>
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fs :Snippets<CR>
+nnoremap <leader>fh :Helptags<CR>
