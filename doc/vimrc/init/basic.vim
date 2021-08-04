@@ -39,3 +39,8 @@ set wildmenu
 
 " backspace
 set backspace=indent,eol,start
+
+" Key mapping
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
