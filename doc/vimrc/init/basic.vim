@@ -1,11 +1,38 @@
 " -------------------------------------
 " Custom settings
 " -------------------------------------
+" General
+
 " File Encodings
 set fileencodings=utf-8,cp932
 
 " Line number
 set number
+
+" Indentation
+set smartindent
+
+" Clipboad
+set clipboard+=unnamed
+
+" Statusline
+set laststatus=2
+
+" Show Command-Line completion on statusline
+set wildmenu
+
+" backspace
+set backspace=indent,eol,start
+
+" -------------------------------------
+" Key mappings
+
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" -------------------------------------
+" Backups
 
 " Persistent undo
 if has('persistent_undo')
@@ -24,23 +51,3 @@ if !isdirectory(s:backup_path)
 endif
 exe 'set backupdir=' . s:backup_path
 set backup
-
-" Indentation
-set smartindent
-
-" Clipboad
-set clipboard+=unnamed
-
-" Statusline
-set laststatus=2
-
-" Show Command-Line completion on statusline
-set wildmenu
-
-" backspace
-set backspace=indent,eol,start
-
-" Key mapping
-nnoremap Y y$
-nnoremap n nzzzv
-nnoremap N Nzzzv
