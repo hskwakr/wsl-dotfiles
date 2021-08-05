@@ -4,6 +4,7 @@
 
 DOT_DIR="$HOME/wsl-dotfiles"
 DOWNLOAD_DIR="${HOME}/.cache/mybuild"
+GO_VERSION="go1.16.5.linux-amd64.tar.gz"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "go"; then
@@ -22,9 +23,9 @@ fi
 printf "\n\n"
 echo "Start installing go ..."
 
-wget -O "${DOWNLOAD_DIR}/go1.16.5.linux-amd64.tar.gz" "https://golang.org/dl/go1.16.5.linux-amd64.tar.gz"
+wget -O "${DOWNLOAD_DIR}/${GO_VERSION}" "https://golang.org/dl/${GO_VERSION}"
 
 sudo rm -rf /usr/local/go
-sudo tar -C /usr/local -xzf "${DOWNLOAD_DIR}/go1.16.5.linux-amd64.tar.gz"
+sudo tar -C /usr/local -xzf "${DOWNLOAD_DIR}/${GO_VERSION}"
 
-rm -rf "${DOWNLOAD_DIR}/go1.16.5.linux-amd64.tar.gz"
+rm -rf "${DOWNLOAD_DIR}/${GO_VERSION:?}"
