@@ -38,3 +38,9 @@ let g:lsp_diagnostics_echo_cursor = 1
 let g:lsp_diagnostics_float_cursor = 1
 let g:lsp_text_edit_enabled = 1
 let g:lsp_insert_text_enabled = 1
+
+" For Go
+let g:lsp_settings_filetype_go = [
+\   'gopls',
+\   'golangci-lint-langserver',
+\ ]
