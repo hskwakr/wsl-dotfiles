@@ -6,7 +6,7 @@ BIN_DIR="${HOME}/.cache/mybuild/bin"
 DOWNLOAD_DIR="${HOME}/.cache/mybuild/.vim"
 
 if [ -d "${DOWNLOAD_DIR}" ]; then
-  rm -rf "${DOWNLOAD_DIR}"
+  sudo rm -rf "${DOWNLOAD_DIR}"
 fi
 
 printf "\n\n"
