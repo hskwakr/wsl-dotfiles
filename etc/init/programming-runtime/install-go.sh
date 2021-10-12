@@ -4,7 +4,7 @@
 
 DOT_DIR="$HOME/wsl-dotfiles"
 DOWNLOAD_DIR="${HOME}/.cache/mybuild"
-GO_VERSION="go1.16.7.linux-amd64.tar.gz"
+GO_VERSION="go1.17.2.linux-amd64.tar.gz"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if has "go"; then
