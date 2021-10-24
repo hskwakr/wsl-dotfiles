@@ -8,6 +8,8 @@ augroup END
 
 " -------------------------------------
 " UsePlugin
+" To check all available plugins name:
+" :echo keys(g:plugs)
 
 " g:plugs is a global variable by vim-plug
 let s:plugs = get(s:, 'plugs', get(g:, 'plugs', {}))
