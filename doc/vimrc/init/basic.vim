@@ -24,6 +24,9 @@ set wildmenu
 " backspace
 set backspace=indent,eol,start
 
+" hilight a line of the cursor
+set cursorline
+
 " -------------------------------------
 " Key mappings
 
