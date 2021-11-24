@@ -15,17 +15,37 @@ set smartindent
 " Clipboad
 set clipboard+=unnamed
 
+" backspace
+set backspace=indent,eol,start
+
+" hilight a line of the cursor
+set cursorline
+
+" -------------------------------------
+" Statusline
+
 " Statusline
 set laststatus=2
 
 " Show Command-Line completion on statusline
 set wildmenu
 
-" backspace
-set backspace=indent,eol,start
-
-" hilight a line of the cursor
-set cursorline
+" Appearance of statusline
+set statusline=
+" filepath
+set statusline+=\ %t
+" modified sign
+set statusline+=%{&modified?'[+]':''}
+" separator
+set statusline+=\%=
+" filetype
+set statusline+=\ [
+set statusline+=\ %Y
+set statusline+=\ ]
+" buffer number
+set statusline+=\ BUFF:\ %-n
+" col number
+set statusline+=\ COL:\ %-3v
 
 " -------------------------------------
 " Key mappings
