@@ -15,5 +15,4 @@ augroup vimrc_indent
   autocmd FileType bash setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   autocmd FileType go   setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   autocmd FileType php  setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
-  autocmd FileType json setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 augroup END
