@@ -8,6 +8,9 @@ if [ -d "${SCRIPTS_DIR}" ]; then
   sh "${SCRIPTS_DIR}/util-tools.sh"
   sh "${SCRIPTS_DIR}/programming-runtime.sh"
   sh "${SCRIPTS_DIR}/build-tools.sh"
+
+  echo "Clean apt dependencies..."
+  sudo apt --purge autoremove
 else
   echo "${SCRIPTS_DIR} does not exist"
   exit 1
