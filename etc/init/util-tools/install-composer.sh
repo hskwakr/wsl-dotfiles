@@ -27,7 +27,7 @@ if ! has "composer"; then
   ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', '${SETUP}');")"
 
   if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]; then
-    >&2 echo 'ERROR: Invalid installer checksum'
+    echo >&2 'ERROR: Invalid installer checksum'
     rm -rf "${SETUP}"
     exit 1
   fi
