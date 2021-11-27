@@ -43,11 +43,13 @@ set statusline+=\ [
 set statusline+=\ %Y
 set statusline+=\ ]
 " buffer number
-set statusline+=\ BUFF:\%2n
+set statusline+=\ BUF:\%4n
 " col number
-set statusline+=\ COL:\%3v
+set statusline+=\ COL:\%4v
 " line percentage
-set statusline+=\ LINE:\%3p%%\  
+set statusline+=\ ROW:\%4p%%
+" space
+set statusline+=\ %(%)
 
 " -------------------------------------
 " Key mappings
