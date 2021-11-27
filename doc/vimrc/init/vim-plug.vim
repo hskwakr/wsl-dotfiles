@@ -61,6 +61,9 @@ Plug 'dense-analysis/ale'
 " For cheatsheet
 Plug 'reireias/vim-cheatsheet'
 
+" For surround.vim
+Plug 'tpope/vim-surround'
+
 " For go
 Plug 'sebdah/vim-delve'
 
