@@ -4,8 +4,7 @@
 Configurations and tool installation scripts for Ubuntu 20.04 LTS on WSL2.
 
 # Usage
-I recommend testing with playgrounds before using this repository.  
-[Ubuntu 20.04 Playground | Katacoda](https://www.katacoda.com/courses/ubuntu/playground2004 "Ubuntu 20.04 Playground | Katacoda")
+I recommend testing with playgrounds before using this repository.
 
 ### Install
 Download this repo and make symlinks for dotfiles.
