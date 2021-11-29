@@ -11,6 +11,8 @@ Download this repo and make symlinks for dotfiles.
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/hskwakr/wsl-dotfiles/main/bin/install.sh)"
 ```
+___Warning:___  
+This install script override `~/.gitconfig`. If you miss your original `.gitconfig`, you can find it from `~/.cache/dotfiles/default/`.  
 
 ### Init
 Run tool installation scripts for Ubuntu 20.04 LTS.
