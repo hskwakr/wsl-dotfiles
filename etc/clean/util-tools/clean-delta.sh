@@ -7,7 +7,7 @@ DOT_DIR="$HOME/wsl-dotfiles"
 if has "delta"; then
   echo "Remove delta ..."
 
-  sudo dpkg -r delta
+  sudo dpkg -r git-delta
 else
   echo "delta is already removed"
 fi
