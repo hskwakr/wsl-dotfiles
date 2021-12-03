@@ -20,6 +20,7 @@ Run tool installation scripts for Ubuntu 20.04 LTS.
 cd ~/wsl-dotfiles && . .bashrc && \
 ./etc/init/build-tools.sh && . .bashrc && \
 ./etc/init/programming-runtime.sh && . .bashrc && \
+./etc/init/package-manager.sh && . .bashrc && \
 ./etc/init/util-tools.sh && . .bashrc
 ```
 
