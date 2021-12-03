@@ -16,8 +16,11 @@ export EDITOR=vim
 mybuild_bin="${HOME}/.cache/mybuild/bin"
 [ -d "${mybuild_bin}" ] && export PATH="${mybuild_bin}:$PATH"
 # For pip
-local_bin="${HOME}/.local/bin"
-[ -d "${local_bin}" ] && export PATH="${local_bin}:$PATH"
+pip_bin="${HOME}/.local/bin"
+[ -d "${pip_bin}" ] && export PATH="${pip_bin}:$PATH"
+# For composer
+composer_bin="${HOME}/.config/composer/vendor/bin"
+[ -d "${composer_bin}" ] && export PATH="${composer_bin}:$PATH"
 
 #--------------------------------------
 # Load configurations
