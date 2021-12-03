@@ -6,6 +6,7 @@ if [ -d "${SCRIPTS_DIR}" ]; then
   echo "Start runing clean scripts..."
 
   sh "${SCRIPTS_DIR}/util-tools.sh"
+  sh "${SCRIPTS_DIR}/package-manager.sh"
   sh "${SCRIPTS_DIR}/programming-runtime.sh"
   sh "${SCRIPTS_DIR}/build-tools.sh"
 
