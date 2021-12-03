@@ -8,7 +8,7 @@ if has "php"; then
   echo "Remove php ..."
 
   sudo apt update
-  sudo apt -y remove php
+  sudo apt -y remove php php-zip php-mbstring php-yaml
 else
   echo "php is already removed"
 fi
