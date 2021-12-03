@@ -44,6 +44,26 @@ alias gst="git status"
 #--------------------------------------
 # Init commands
 
+# Clean duplicate PATH
+_path=""
+for _p in $(echo "${PATH}" | tr ':' ' '); do
+  case ":${_path}:" in
+    *:"${_p}":* )
+      ;;
+    * )
+      if [ "$_path" ]; then
+        _path="$_path:$_p"
+      else
+        _path=$_p
+      fi
+      ;;
+  esac
+done
+
+PATH=$_path
+unset _p
+unset _path
+
 # starship
 if type "starship" >/dev/null 2>&1 ; then
   eval "$(starship init bash)"
