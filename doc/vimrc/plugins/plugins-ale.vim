@@ -21,4 +21,7 @@ let g:ale_fixers = {
 \       'goimports',
 \       'gofmt',
 \   ],
+\   'php': [
+\       'php_cs_fixer',
+\   ],
 \}
