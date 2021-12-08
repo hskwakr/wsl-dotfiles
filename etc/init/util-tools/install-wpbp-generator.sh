@@ -6,10 +6,6 @@ DOT_DIR="$HOME/wsl-dotfiles"
 . "${DOT_DIR}/etc/lib/sh/has.sh"
 
 if ! has "wpbp-generator"; then
-  if [ ! -d "${INSTALL_DIR}" ]; then
-    mkdir -p "${INSTALL_DIR}"
-  fi
-
   if ! has "composer"; then
     echo "composer required"
     exit 1
