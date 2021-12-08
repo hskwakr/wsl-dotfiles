@@ -11,7 +11,10 @@ let g:ale_linters = {
 \       'golint',
 \       'gopls',
 \       'govet',
-\   ]
+\   ],
+\   'php': [
+\       'phpcs',
+\   ],
 \}
 
 " Fix
