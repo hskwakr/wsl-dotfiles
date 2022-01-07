@@ -16,5 +16,6 @@ augroup vimrc_indent
   autocmd FileType go         setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   autocmd FileType php        setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   autocmd FileType css        setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+  autocmd FileType html       setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 augroup END
