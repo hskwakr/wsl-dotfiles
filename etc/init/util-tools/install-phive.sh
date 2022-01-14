@@ -30,7 +30,7 @@ if ! has "phive"; then
   chmod +x phive.phar
   sudo mv phive.phar "${INSTALL_DIR}/phive"
 
-  rm phive.phar.asc 
+  rm phive.phar.asc
 else
   echo "phive is already installed"
 fi
