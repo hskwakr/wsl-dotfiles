@@ -9,7 +9,7 @@ if ! has "php"; then
   echo "Start installing php ..."
 
   sudo apt update
-  sudo apt -y install php php-zip php-mbstring php-yaml
+  sudo apt -y install php php-zip php-mbstring php-yaml php-xml php-curl
 else
   echo "php is already installed"
 fi
