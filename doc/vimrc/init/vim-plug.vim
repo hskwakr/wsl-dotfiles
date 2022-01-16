@@ -37,6 +37,12 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 
+" For lint
+Plug 'dense-analysis/ale'
+
+" For bridge between vim-lesp and ale
+Plug 'rhysd/vim-lsp-ale'
+
 " For ascyncomplete
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
@@ -54,9 +60,6 @@ if has('python3')
   Plug 'honza/vim-snippets'
   Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 endif
-
-" For lint
-Plug 'dense-analysis/ale'
 
 " For cheatsheet
 Plug 'reireias/vim-cheatsheet'
