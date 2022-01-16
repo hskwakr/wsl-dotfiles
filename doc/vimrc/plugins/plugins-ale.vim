@@ -28,3 +28,7 @@ let g:ale_fixers = {
 \       'php_cs_fixer',
 \   ],
 \}
+
+" Executable path
+"let b:ale_php_phpcs_executable = 'tools/phpcs'
+let b:ale_php_cs_fixer_executable = 'tools/php-cs-fixer'
