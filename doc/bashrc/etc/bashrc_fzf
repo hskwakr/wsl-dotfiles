@@ -9,9 +9,9 @@ fzf_keybinds_path="${DOTFILES}/doc/fzf/key-bindings.bash"
 fzf_completion_path="${DOTFILES}/doc/fzf/completion"
 
 # key bindings
-[ -s ${fzf_keybinds_path} ] && source ${fzf_keybinds_path}
+[ -s "${fzf_keybinds_path}" ] && source "${fzf_keybinds_path}"
 # completion
-[ -s ${fzf_completion_path} ] && source ${fzf_completion_path} 
+[ -s "${fzf_completion_path}" ] && source "${fzf_completion_path}" 
 
 export FZF_DEFAULT_OPTS="
 --layout=reverse
@@ -34,11 +34,34 @@ export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 #--------------------------------------
 # Functions
 
-# # find-in-file - usage: fif <SEARCH_TERM>
+# find-in-file - usage: fif <SEARCH_TERM>
 fif() {
   if [ ! "$#" -gt 0 ]; then
     echo "Need a string to search for!"
     return 1
   fi
-  rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW --preview "rg --ignore-case --pretty --context 10 '$1' {}"
+  rg --files-with-matches --no-messages "$1" | fzf "$FZF_PREVIEW_WINDOW" --preview "rg --ignore-case --pretty --context 10 '$1' {}"
+}
+
+# fshow - git commit browser
+fshow() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
+      --bind "ctrl-m:execute:
+                (grep -o '[a-f0-9]\{7\}' | head -1 |
+                xargs -I % sh -c 'git show --color=always % | bat') << 'FZF-EOF'
+                {}
+FZF-EOF"
+}
+
+# tm - create new tmux session, or switch to existing one. Works from within tmux too. (@bag-man)
+# `tm` will allow you to select your tmux session via fzf.
+# `tm irc` will attach to the irc session (if it exists), else it will create it.
+tm() {
+  [[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
+  if [ "$1" ]; then
+    tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s "$1" && tmux $change -t "$1"); return
+  fi
+  session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf --exit-0) &&  tmux $change -t "$session" || echo "No sessions found."
 }
