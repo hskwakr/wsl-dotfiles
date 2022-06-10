@@ -43,3 +43,10 @@ let g:lsp_settings_filetype_go = [
 \   'gopls',
 \   'golangci-lint-langserver',
 \ ]
+
+" Server settings
+let g:lsp_settings = {
+\  'typescript-language-server': {
+\    'blocklist': lsp_settings#get('typescript-language-server', 'blocklist', {c->empty(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), ['node_modules/', '.yarn/'])) ? ['typescript', 'javascript', 'typescriptreact', 'javascriptreact'] : []}),
+\  },
+\}
