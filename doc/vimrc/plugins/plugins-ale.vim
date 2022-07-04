@@ -4,6 +4,9 @@
 " -------------------------------------
 UsePlugin 'ale'
 
+" highlight
+g:ale_set_highlights = 1
+
 " Lint
 let g:ale_linters = {
 \   'go': [
