@@ -7,3 +7,5 @@
 	excludesfile = ~/wsl-dotfiles/doc/git/ignore
 [alias]
 	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
+[init]
+	defaultBranch = main
