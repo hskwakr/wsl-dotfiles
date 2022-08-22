@@ -26,9 +26,8 @@ if ! has "composer"; then
   php -r "copy('https://getcomposer.org/installer', '${SETUP}');"
   ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', '${SETUP}');")"
 
-  if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]
-  then
-    >&2 echo 'ERROR: Invalid installer checksum'
+  if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]; then
+    echo >&2 'ERROR: Invalid installer checksum'
     rm -rf "${SETUP}"
     exit 1
   fi
